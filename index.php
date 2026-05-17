@@ -1,2 +1,3 @@
-
-    
+<p>O <b>Dusk Invest Education</b> tem como objetivo apresentar conceitos fundamentais de educação financeira e ensinar, de forma acessível, como iniciar no mundo dos investimentos. Desde o planejamento financeiro
+     pessoal até a análise de diferentes tipos de investimentos, como renda fixa e variável. Elaboração de um guia prático voltado para iniciantes. Como resultado, espera-se
+      contribuir para a conscientização financeira e auxiliar indivíduos na tomada de decisões mais seguras e eficientes.</p>
