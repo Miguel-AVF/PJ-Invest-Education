@@ -1,0 +1,260 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000; /* Fundo Ultra Dark */
+    color: #ffffff;
+}
+
+/* CABEÇALHO */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%; /* Aumentei levemente o padding para dar mais espaço ao efeito */
+    
+    /* EFEITO ESFUMAÇADO (Transição ultra suave do preto puro para o transparente) */
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.95) 0%,   /* Começa bem denso no topo */
+        rgba(0, 0, 0, 0.75) 40%,  /* Começa a esfumaçar */
+        rgba(0, 0, 0, 0.30) 80%,  /* Quase transparente */
+        rgba(0, 0, 0, 0.00) 100%  /* Totalmente invisível na base */
+    );
+    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    /* Removi a borda sólida para que o efeito esfumaçado não seja "cortado" por uma linha */
+    border-bottom: none;
+}
+
+.user-profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden; /* Corta tudo o que for maior que os 45px */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    /* Garante o alinhamento caso decida voltar pro ícone algum dia */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* 2. ADICIONE ESTA REGRA NOVA EXATAMENTE AQUI ABAIXO */
+.user-profile img {
+    width: 100%;       /* Força a foto a ter no máximo a largura da caixinha (45px) */
+    height: 100%;      /* Força a foto a ter no máximo a altura da caixinha (45px) */
+    object-fit: cover; /* O SEGREDO: Adapta a foto dentro do círculo sem amassar ou distorcer */
+    object-position: center; /* Centraliza o corte na parte mais importante da foto */
+}
+
+/* Efeito de hover (opcional, mantendo o estilo premium) */
+
+/* Efeito ao passar o mouse */
+.user-profile:hover {
+    background-color: #3d4b5a; /* Fundo clareia um pouco */
+    color: #ffffff;            /* Bonequinho fica branco */
+    border-color: #B8860B;     /* Borda ganha a cor de destaque (Estilo T-Car) */
+    transform: scale(1.05);    /* Efeito de crescimento leve */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #FFD700; /* Cor de destaque*/
+}
+
+.nav-menu a {
+    color: #ffffff; /* Tom dourado sutil para os links */
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #D3AF37;
+}
+
+::selection {
+    background-color: rgba(184, 134, 11, 0.15);  /* A cor do fundo da seleção (Troque pelo seu vermelho/laranja estilo T-Car) */
+    color: #ffffff;            /* A cor do texto selecionado (Branco para dar contraste) */
+}
+
+/* BANNER HERO */
+
+.hero-banner {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0)), 
+                url('../image/fundo-dusk.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Mudado de center para flex-start (esquerda) */
+    text-align: left; /* Mudado de center para left */
+    padding: 0 3%; /* Aumentei o padding lateral para o texto não colar na borda da tela */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-align: left; /* Garante o alinhamento à esquerda */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: left; /* Garante o alinhamento à esquerda */
+    max-width: 600px; /* Dica extra: limita a largura do texto para não esticar demais na tela toda */
+}
+
+/* SEÇÃO DE ESTOQUE (GRID) */
+.stock-section {
+    padding: 60px 5%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+.stock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* CARD DO CARRO */
+.car-card {
+    background-color: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #B8860B;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 208, 0, 0.1);
+}
+
+.car-image {
+    position: relative;
+    height: 200px;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.car-details {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.h3{
+    color: #c5a880;
+}
+
+.car-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c5a880;
+    margin-bottom: 20px;
+}
+
+.btn-card-wa {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #B8860B;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-card-wa:hover {
+    background-color: #B8860B;
+    color: black;
+}
+
+
+
+/* BOTÃO FLUTUANTE DO WHATSAPP */
+.whatsapp-floating {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: transform 0.2s;
+}
+
+.whatsapp-floating:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVIDADE (PARA CELULAR) */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav-menu a { margin-right: 0; }
+    .hero-content h1 { font-size: 2rem; }
+}
