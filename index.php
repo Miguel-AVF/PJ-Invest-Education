@@ -4,7 +4,7 @@ include __DIR__. '/includes/head.php';
 
 ?>
 
-<header class="main-header">
+    <header class="main-header">
         <div class="logo">DUSK <span>INVEST EDUCATION</span></div>
         <nav class="nav-menu">
             <a href="#">Inicio</a>
@@ -33,7 +33,7 @@ include __DIR__. '/includes/head.php';
     <section id="estoque" class="stock-section">
         <div class="section-title">
             <h2>Funções</h2>
-            <p>Veículos exclusivos selecionados a dedo</p>
+            <p>Pensado para você</p>
         </div>
 
         <div class="stock-grid">
@@ -83,4 +83,8 @@ include __DIR__. '/includes/head.php';
         </div>
     </section>
 
-    
+<?php
+
+include __DIR__. '/includes/footer.php';
+
+?>
