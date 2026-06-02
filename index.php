@@ -14,6 +14,13 @@ include __DIR__. '/includes/head.php';
             <a href="#">Carteira</a>
         </nav>
 
+        <div class="search-bar">
+            <form action="/buscar" method="GET">
+                <input type="text" placeholder="Buscar no site..." name="q">
+                <button type="submit"><i class="fas fa-search"></i>🔎</button>
+            </form>
+        </div>
+
         <div class="user-profile">
             <img src="image/pfp.avif" alt="Foto de Perfil">
         </div>
