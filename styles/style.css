@@ -35,6 +35,46 @@ body {
     border-bottom: none;
 }
 
+.search-bar form {
+   display: flex;
+    align-items: center;
+    background-color: #2a2a2a;
+    border: 1px solid #444444; /* Cor da borda inicial (cinza) */
+    border-radius: 8px;
+    padding: 6px 15px;
+    
+    /* Transição suave: faz a cor mudar devagar em vez de piscar */
+    transition: border-color 0.3s ease;              /* O primeiro número controla a altura, 
+                                        o segundo controla a largura nas pontas */
+}
+
+/* Customizando o texto que o usuário digita */
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 6px;
+    font-size: 14px;
+    width: 200px;
+    /* 4. COR DO TEXTO E DO PLACEHOLDER */
+    color: #ffffff;                  /* Cor do texto digitado (branco) */
+}
+
+/* Customizando a cor da frase de exemplo "Buscar no site..." */
+.search-bar input::placeholder {
+    color: #aaaaaa;                  /* Cor do texto de exemplo (cinza claro) */
+}
+
+/* Customizando o botão/ícone */
+.search-bar button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 5px;
+
+}
+
 .user-profile {
     width: 45px;
     height: 45px;
@@ -58,14 +98,14 @@ body {
     object-position: center; /* Centraliza o corte na parte mais importante da foto */
 }
 
-/* Efeito de hover (opcional, mantendo o estilo premium) */
+
 
 /* Efeito ao passar o mouse */
-.user-profile:hover {
-    background-color: #3d4b5a; /* Fundo clareia um pouco */
-    color: #ffffff;            /* Bonequinho fica branco */
-    border-color: #B8860B;     /* Borda ganha a cor de destaque (Estilo T-Car) */
-    transform: scale(1.05);    /* Efeito de crescimento leve */
+.user-profile:hover,
+.search-bar form:focus-within {
+
+    border-color: #ff9f43; /* Nova cor da borda ao passar o mouse (ex: laranja/ouro) */
+
 }
 
 .logo {
