@@ -298,3 +298,127 @@ body {
     .nav-menu a { margin-right: 0; }
     .hero-content h1 { font-size: 2rem; }
 }
+
+.sobre_duck .titulo {
+    text-align: center;         /* Mudado de center para left */
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    padding-left: 40px;       /* Mantém o alinhamento com a margem do conteúdo */
+}
+
+/* 2. Container do Bloco "Sobre Nós" */
+.sobre_conteudo {
+    max-width: 800px;        /* Uma largura confortável para ler o texto longo */
+    margin: 0 auto 60px 40px; /* O '40px' no final garante que ele fique colado na esquerda, alinhado com o H1 */
+    padding: 0;              
+}
+
+/* Como não temos mais imagem, o texto ocupa o bloco todo normalmente */
+.sobre_texto {
+    width: 100%;
+}
+
+/* Título interno "Sobre nós." */
+.sobre_texto h2 {
+    font-size: 2.5rem;        
+    color: #ffffff;           
+    margin-bottom: 20px;      
+    font-weight: 600;
+    text-align: left;         /* Força o título para a esquerda */
+}
+
+/* Estilo dos Parágrafos */
+.sobre_texto p {
+    font-size: 1rem;
+    color: #ffffff;           
+    line-height: 1.6;         
+    margin-bottom: 20px;      
+    text-align: left;         /* Força o texto para a esquerda */
+}
+
+/* Título de "Nossos Pilares" também alinhado à esquerda */
+.grid h2 {
+    text-align: left;         /* Mudado de center para left */
+    color: #1e1e4f;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo de todos os Parágrafos */
+.sobre_texto p {
+    font-size: 1rem;
+    color: #444444;           /* Cinza escuro para uma leitura confortável */
+    line-height: 1.6;         /* Espaçamento elegante entre as linhas do texto */
+    margin-bottom: 20px;      /* Espaço entre um parágrafo e outro */
+}
+
+/* Título de "Nossos Pilares" centralizado para combinar */
+.grid {
+    display: flex;
+    flex-direction: column;   /* Alinha o título "Nossos Pilares" no topo */
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+/* Título de "Nossos Pilares" (Fica sozinho no topo) */
+.grid h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Criamos um comportamento onde os itens (h3 + p) que vêm DEPOIS do h2 fiquem lado a lado */
+.grid {
+    /* Força os blocos de Missão, Visão e Valores a virarem colunas horizontais */
+    display: flex;
+    flex-flow: row wrap;       
+    justify-content: space-between; /* Distribui as colunas igualmente na tela */
+    align-items: flex-start;   /* Alinha todas pelo topo do texto */
+    gap: 40px;                 /* Espaço de separação entre as colunas */
+}
+
+/* Cada coluna de texto individual (Missão, Visão, Valores) */
+.pilar_item {
+    flex: 1;                   /* Força todas as 3 colunas a terem a mesma largura */
+    min-width: 250px;          /* Se a tela diminuir, impede que o texto fique espremido */
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Títulos das colunas (Missão, Visão, Valores) */
+.pilar_item h3 {
+    color: #c5a880;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Textos da Missão e Visão */
+.pilar_item p {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Lista de Valores */
+.pilar_item ul {
+    list-style: none;
+}
+
+.pilar_item ul li {
+    font-size: 0.95rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.pilar_item ul li b {
+    color: #c5a880;
+}
