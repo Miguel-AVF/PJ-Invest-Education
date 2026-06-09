@@ -1,38 +1,24 @@
 <?php
 
-include __DIR__. '/includes/head.php';
+    include __DIR__. '/includes/head.php';
 
 ?>
 
-    <header class="main-header">
-        <div class="logo">DUSK <span>INVEST EDUCATION</span></div>
-        <nav class="nav-menu">
-            <a href="#">Inicio</a>
-            <a href="#">Informativo</a>
-            <a href="#">Simulador</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Carteira</a>
-        </nav>
+<?php
 
-        <div class="search-bar">
-            <form action="/buscar" method="GET">
-                <input type="text" placeholder="Buscar no site..." name="q">
-                <button type="submit"><i class="fas fa-search"></i>🔎</button>
-            </form>
-        </div>
+    include __DIR__. '/includes/menu.php';
 
-        <div class="user-profile">
-            <img src="image/pfp.avif" alt="Foto de Perfil">
-        </div>
-    </header>
+?>
+
+   
 
     <!-- BANNER PRINCIPAL (HERO) -->
     <section class="hero-banner">
         <div class="hero-content">
             <h1>Dusk Invest Education</h1>
             <p>O <b>Dusk Invest Education</b> tem como objetivo apresentar conceitos fundamentais de educação financeira e ensinar, de forma acessível, como iniciar no mundo dos investimentos. Desde o planejamento financeiro
-     pessoal até a análise de diferentes tipos de investimentos, como renda fixa e variável. Elaboração de um guia prático voltado para iniciantes. Como resultado, espera-se
-      contribuir para a conscientização financeira e auxiliar indivíduos na tomada de decisões mais seguras e eficientes.</p>
+            pessoal até a análise de diferentes tipos de investimentos, como renda fixa e variável. Elaboração de um guia prático voltado para iniciantes. Como resultado, espera-se
+            contribuir para a conscientização financeira e auxiliar indivíduos na tomada de decisões mais seguras e eficientes.</p>
         </div>
     </section>
 
@@ -92,6 +78,6 @@ include __DIR__. '/includes/head.php';
 
 <?php
 
-include __DIR__. '/includes/footer.php';
+    include __DIR__. '/includes/footer.php';
 
 ?>
