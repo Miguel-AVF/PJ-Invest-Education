@@ -13,8 +13,8 @@
    
 
     <!-- BANNER PRINCIPAL (HERO) -->
-    <section class="hero-banner">
-        <div class="hero-content">
+    <section class="fundo">
+        <div class="apresentação">
             <h1>Dusk Invest Education</h1>
             <p>O <b>Dusk Invest Education</b> tem como objetivo apresentar conceitos fundamentais de educação financeira e ensinar, de forma acessível, como iniciar no mundo dos investimentos. Desde o planejamento financeiro
             pessoal até a análise de diferentes tipos de investimentos, como renda fixa e variável. Elaboração de um guia prático voltado para iniciantes. Como resultado, espera-se
@@ -23,54 +23,48 @@
     </section>
 
     <!-- SEÇÃO DE ESTOQUE DESTAQUE -->
-    <section id="estoque" class="stock-section">
-        <div class="section-title">
+    <section class="funções">
+        <div class="sub_titulo">
             <h2>Funções</h2>
-            <p>Pensado para você</p>
         </div>
 
-        <div class="stock-grid">
+        <div class="func-grid">
             <!-- Card de Carro 1 -->
-            <div class="car-card">
-                <div class="car-image">
+            <div class="func-card">
+                <div class="func-imagem">
                     <img src="image/grafico.avif" alt="Grafico">
                     
                 </div>
-                <div class="car-info">
+                <div class="func-inform">
                     <h3 class="h3">Graficos</h3>
-                    <p class="car-details">qualquer coisa</p>
-                    <a href="" class="btn-card-wa" target="">
-                        <i class=""></i> Veja Agora
-                    </a>
+                    <p class="descrição">Acompanhe seu Crescimento</p>
+                    <a href="" class="botão"> Veja Agora </a>
                 </div>
             </div>
 
             <!-- Card de Carro 2 -->
-            <div class="car-card">
-                <div class="car-image">
+            <div class="func-card">
+                <div class="func-imagem">
                     <img src="image/inform.jpeg" alt="Informação">
                     
                 </div>
-                <div class="car-info">
+                <div class="func-inform">
                     <h3 class="h3">Informações</h3>
-                    <p class="car-details">Ai ai ai Carrapato não tem pai</p>
-                    <a href="" class="btn-card-wa disabled">Veja Agora</a>
+                    <p class="descrição">Tire duvidas com textos Simples</p>
+                    <a href="" class="botão">Veja Agora</a>
                 </div>
             </div>
 
             <!-- Card de Carro 3 -->
-            <div class="car-card">
-                <div class="car-image">
+            <div class="func-card">
+                <div class="func-imagem">
                     <img src="image/simula.png" alt="Simulação">
                     
                 </div>
-                <div class="car-info">
+                <div class="func-inform">
                     <h3 class="h3">Simulações</h3>
-                    <p class="car-details">Blá blá blá</p>
-
-                    <a href="" class="btn-card-wa" target="">
-                        <i class="fab fa-whatsapp"></i> Veja Agora    
-                    </a>
+                    <p class="descrição">Aprenda na Pratica</p>
+                    <a href="" class="botão" > Veja Agora </a>
                 </div>
             </div>
         </div>
