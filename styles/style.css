@@ -520,7 +520,28 @@ body {
 
         /*Cadastro*/
 
-input[type="date"].login-input::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-    cursor: pointer;
+#register-panel {
+    max-width: 650px;
+    width: 100%;
+}
+
+/* Organiza as linhas do formulário em colunas flexíveis */
+.horizontal-form .form-row {
+    display: flex;
+    gap: 16px; /* Espaço entre os campos na horizontal */
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+/* Faz cada grupo de input ocupar o mesmo espaço disponível */
+.horizontal-form .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botão de cadastro ocupando toda a largura inferior */
+.horizontal-form .login-btn {
+    width: 100%;
+    margin-top: 10px;
 }
