@@ -1,4 +1,5 @@
 <?php
+
     session_start();
     require_once 'config/database.php';
 
@@ -61,8 +62,8 @@
         
         <div class="login-logo">
             <div style="width:60px;height:60px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 12px"></div>
-            <h1>Dusk <span>Invest Education</span></h1>
-            <p>Seja Bem Vindo!!</p>
+            <h1 style="font-size: 2rem; font-weight: bold; line-height: 1.2;">Dusk <span style="color: #FFD700;">Invest Education</span></h1>
+            <p>Seja Bem Vindo</p>
         </div>
         
         <div class="login-error" id="login-error"></div>
@@ -75,11 +76,12 @@
         
         <button class="login-btn" onclick="doLogin()">Entrar</button>
         
-        <a href="cadastro.php" >
-            Criar conta
+        <a href="cadastro.php" style="color: #B8860B; text-decoration: none;">
+            <strong>Criar conta</strong>
         </a>
 
     </div>
+
 </div>
 
 </body>
