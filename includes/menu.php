@@ -16,6 +16,6 @@
         </div>
 
         <div class="user-profile">
-            <img src="image/pfp.avif" alt="Foto de Perfil">
+            <a href="cadastro.php"><img src="image/pfp.avif" alt="Foto de Perfil" ></a>
         </div>
     </header>
