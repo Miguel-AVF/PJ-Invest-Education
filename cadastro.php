@@ -1,0 +1,87 @@
+<?php
+    require_once 'config/database.php';
+
+    $msg = '';
+
+    if(isset($_POST['cadastrar'])){
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        $data = $_POST['data'];
+        $tel = $_POST['telefone'];
+
+        $sql = "INSERT INTO usuarios
+        (nome_user, email_user, senha_user, data_nasc_user,  tel_user)
+        VALUES
+        (:nome,:login,:senha,:data,:email,:tel)";
+
+        $stmt = $conn->prepare($sql);
+
+        $stmt->bindValue(':nome',$nome);
+        $stmt->bindValue(':login',$login);
+        $stmt->bindValue(':senha',$senha);
+        $stmt->bindValue(':data',$data);
+        $stmt->bindValue(':email',$email);
+        $stmt->bindValue(':tel',$tel);
+
+        if($stmt->execute()){
+            $msg = "Cadastro realizado com sucesso!";
+        }
+    }
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div class="login-wrapper">
+    <div class="login-box func-card" id="register-panel">
+        
+        <div class="login-logo">
+            <div style="width:60px;height:60px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 12px"></div>
+            <h1>Dusk <span>Invest Education</span></h1>
+            <p>Criar Nova Conta</p>
+        </div>
+
+        <?php if(!empty($msg)): ?>
+        <div class="login-error" style="display: block;">
+            <?= $msg ?>
+        </div>
+        <?php endif; ?>
+
+        <form method="POST">
+            
+            <label class="login-label">Nome Completo</label>
+            <input type="text" name="nome" class="login-input" placeholder="" required>
+
+            <label class="login-label">E-mail</label>
+            <input type="email" name="email" class="login-input" placeholder="" required>
+
+            <label class="login-label">Senha</label>
+            <input type="password" name="senha" class="login-input" placeholder="" required>
+
+            <label class="login-label">Data de Nascimento</label>
+            <input type="date" name="data" class="login-input" required>
+
+            <label class="login-label">Telefone</label>
+            <input type="text" name="telefone" class="login-input" placeholder="">
+
+            <button type="submit" name="cadastrar" class="login-btn">
+                Cadastrar
+            </button>
+
+        </form>
+
+        <div class="login-hint">
+            Já tem conta? <a href="login.php" style="color: #B8860B; text-decoration: none;"><strong>Entrar</strong></a>
+        </div>
+
+    </div>
+</div>
+
