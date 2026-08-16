@@ -1,4 +1,5 @@
 <?php
+
     require_once 'config/database.php';
 
     $msg = '';
@@ -28,7 +29,9 @@
         if($stmt->execute()){
             $msg = "Cadastro realizado com sucesso!";
         }
+
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -44,33 +47,56 @@
     <div class="login-box func-card" id="register-panel">
         
         <div class="login-logo">
+
             <div style="width:60px;height:60px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 12px"></div>
-            <h1>Dusk <span>Invest Education</span></h1>
-            <p>Criar Nova Conta</p>
+            <h1 style="font-size: 2rem; font-weight: bold; line-height: 1.2;">Dusk <span style="color: #FFD700;">Invest Education</span></h1>
+            <p>Criar Conta</p>
         </div>
 
         <?php if(!empty($msg)): ?>
+
         <div class="login-error" style="display: block;">
             <?= $msg ?>
         </div>
+
         <?php endif; ?>
 
-        <form method="POST">
+        <form method="POST" class="horizontal-form">
             
-            <label class="login-label">Nome Completo</label>
-            <input type="text" name="nome" class="login-input" placeholder="" required>
+            <div class="form-row">
 
-            <label class="login-label">E-mail</label>
-            <input type="email" name="email" class="login-input" placeholder="" required>
+                <div class="form-group">
+                    <label class="login-label">Nome Completo</label>
+                    <input type="text" name="nome" class="login-input" placeholder="" required>
+                </div>
 
-            <label class="login-label">Senha</label>
-            <input type="password" name="senha" class="login-input" placeholder="" required>
+                <div class="form-group">
+                    <label class="login-label">E-mail</label>
+                    <input type="email" name="email" class="login-input" placeholder="" required>
+                </div>
 
-            <label class="login-label">Data de Nascimento</label>
-            <input type="date" name="data" class="login-input" required>
+            </div>
 
-            <label class="login-label">Telefone</label>
-            <input type="text" name="telefone" class="login-input" placeholder="">
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label class="login-label">Senha</label>
+                    <input type="password" name="senha" class="login-input" placeholder="" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="login-label">Data de Nascimento</label>
+                    <input type="date" name="data" class="login-input" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label class="login-label">Telefone</label>
+                    <input type="text" name="telefone" class="login-input" placeholder="">
+                </div>
+            </div>
 
             <button type="submit" name="cadastrar" class="login-btn">
                 Cadastrar
@@ -83,5 +109,6 @@
         </div>
 
     </div>
+
 </div>
 
