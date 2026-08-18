@@ -16,22 +16,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 5%; /* Aumentei levemente o padding para dar mais espaço ao efeito */
+    padding: 25px 5%; 
     
     /* EFEITO ESFUMAÇADO (Transição ultra suave do preto puro para o transparente) */
     background: linear-gradient(
         to bottom, 
-        rgba(0, 0, 0, 0.95) 0%,   /* Começa bem denso no topo */
-        rgba(0, 0, 0, 0.75) 40%,  /* Começa a esfumaçar */
-        rgba(0, 0, 0, 0.30) 80%,  /* Quase transparente */
-        rgba(0, 0, 0, 0.00) 100%  /* Totalmente invisível na base */
+        rgba(0, 0, 0, 0.95) 0%,   
+        rgba(0, 0, 0, 0.75) 40%,  
+        rgba(0, 0, 0, 0.30) 80%,  
+        rgba(0, 0, 0, 0.00) 100%  
     );
     
     position: sticky;
     top: 0;
     z-index: 1000;
-    
-    /* Removi a borda sólida para que o efeito esfumaçado não seja "cortado" por uma linha */
     border-bottom: none;
 }
 
@@ -39,13 +37,10 @@ body {
    display: flex;
     align-items: center;
     background-color: #2a2a2a;
-    border: 1px solid #444444; /* Cor da borda inicial (cinza) */
+    border: 1px solid #444444; 
     border-radius: 8px;
     padding: 6px 15px;
-    
-    /* Transição suave: faz a cor mudar devagar em vez de piscar */
-    transition: border-color 0.3s ease;              /* O primeiro número controla a altura, 
-                                        o segundo controla a largura nas pontas */
+    transition: border-color 0.3s ease;                                                  
 }
 
 /* Customizando o texto que o usuário digita */
@@ -56,13 +51,12 @@ body {
     padding: 6px;
     font-size: 14px;
     width: 200px;
-    /* 4. COR DO TEXTO E DO PLACEHOLDER */
-    color: #ffffff;                  /* Cor do texto digitado (branco) */
+    color: #ffffff;                  
 }
 
 /* Customizando a cor da frase de exemplo "Buscar no site..." */
 .search-bar input::placeholder {
-    color: #aaaaaa;                  /* Cor do texto de exemplo (cinza claro) */
+    color: #aaaaaa;                 
 }
 
 /* Customizando o botão/ícone */
@@ -79,7 +73,7 @@ body {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    overflow: hidden; /* Corta tudo o que for maior que os 45px */
+    overflow: hidden; 
     border: 2px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -92,10 +86,10 @@ body {
 
 /* 2. ADICIONE ESTA REGRA NOVA EXATAMENTE AQUI ABAIXO */
 .user-profile img {
-    width: 100%;       /* Força a foto a ter no máximo a largura da caixinha (45px) */
-    height: 100%;      /* Força a foto a ter no máximo a altura da caixinha (45px) */
-    object-fit: cover; /* O SEGREDO: Adapta a foto dentro do círculo sem amassar ou distorcer */
-    object-position: center; /* Centraliza o corte na parte mais importante da foto */
+    width: 100%;      
+    height: 100%;      
+    object-fit: cover; 
+    object-position: center; 
 }
 
 
@@ -104,7 +98,7 @@ body {
 .user-profile:hover,
 .search-bar form:focus-within {
 
-    border-color: #ff9f43; /* Nova cor da borda ao passar o mouse (ex: laranja/ouro) */
+    border-color: #ff9f43; 
 
 }
 
@@ -115,11 +109,11 @@ body {
 }
 
 .logo span {
-    color: #FFD700; /* Cor de destaque*/
+    color: #FFD700; 
 }
 
 .nav-menu a {
-    color: #ffffff; /* Tom dourado sutil para os links */
+    color: #ffffff; 
     text-decoration: none;
     margin-right: 25px;
     font-weight: 500;
@@ -131,8 +125,8 @@ body {
 }
 
 ::selection {
-    background-color: rgba(184, 134, 11, 0.15);  /* A cor do fundo da seleção (Troque pelo seu vermelho/laranja estilo T-Car) */
-    color: #ffffff;            /* A cor do texto selecionado (Branco para dar contraste) */
+    background-color: rgba(184, 134, 11, 0.15);  
+    color: #ffffff;           
 }
 
                         /* Pagina Inicial */
@@ -143,8 +137,8 @@ body {
                 url('../image/fundo-dusk.jpeg') no-repeat center center/cover;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Mudado de center para flex-start (esquerda) */
-    text-align: left; /* Mudado de center para left */
+    justify-content: flex-start; 
+    text-align: left; 
     padding: 0 3%; /* Aumentei o padding lateral para o texto não colar na borda da tela */
 }
 
@@ -266,20 +260,20 @@ body {
     .nav-menu a { margin-right: 0; }
     .apresentação h1 { font-size: 2rem; }
 }
-                        /*Sobre.php*/
+                                            /*Sobre.php*/
 .sobre_duck .titulo {
-    text-align: center;         /* Mudado de center para left */
+    text-align: center;         
     margin-top: 30px;
     margin-bottom: 40px;
     font-size: 2.5rem;
     color: #ffffff;
-    padding-left: 40px;       /* Mantém o alinhamento com a margem do conteúdo */
+    padding-left: 40px;      
 }
 
 /* 2. Container do Bloco "Sobre Nós" */
 .sobre_conteudo {
-    max-width: 800px;        /* Uma largura confortável para ler o texto longo */
-    margin: 0 auto 60px 40px; /* O '40px' no final garante que ele fique colado na esquerda, alinhado com o H1 */
+    max-width: 800px;        
+    margin: 0 auto 60px 40px; 
     padding: 0;              
 }
 
@@ -308,7 +302,7 @@ body {
 
 /* Título de "Nossos Pilares" também alinhado à esquerda */
 .grid h2 {
-    text-align: left;         /* Mudado de center para left */
+    text-align: left;         
     color: #1e1e4f;
     font-size: 2rem;
     margin-bottom: 10px;
@@ -317,15 +311,15 @@ body {
 /* Estilo de todos os Parágrafos */
 .sobre_texto p {
     font-size: 1rem;
-    color: #444444;           /* Cinza escuro para uma leitura confortável */
-    line-height: 1.6;         /* Espaçamento elegante entre as linhas do texto */
-    margin-bottom: 20px;      /* Espaço entre um parágrafo e outro */
+    color: #444444;         
+    line-height: 1.6;        
+    margin-bottom: 20px;    
 }
 
 /* Título de "Nossos Pilares" centralizado para combinar */
 .grid {
     display: flex;
-    flex-direction: column;   /* Alinha o título "Nossos Pilares" no topo */
+    flex-direction: column;   
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 40px;
@@ -345,15 +339,15 @@ body {
     /* Força os blocos de Missão, Visão e Valores a virarem colunas horizontais */
     display: flex;
     flex-flow: row wrap;       
-    justify-content: space-between; /* Distribui as colunas igualmente na tela */
-    align-items: flex-start;   /* Alinha todas pelo topo do texto */
-    gap: 40px;                 /* Espaço de separação entre as colunas */
+    justify-content: space-between; 
+    align-items: flex-start;   
+    gap: 40px;                
 }
 
 /* Cada coluna de texto individual (Missão, Visão, Valores) */
 .pilar_item {
-    flex: 1;                   /* Força todas as 3 colunas a terem a mesma largura */
-    min-width: 250px;          /* Se a tela diminuir, impede que o texto fique espremido */
+    flex: 1;                  
+    min-width: 250px;          
     background: transparent;
     border: none;
     padding: 0;
