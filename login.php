@@ -7,7 +7,7 @@
 
     if(isset($_POST['entrar'])){
 
-        $login = $_POST['login'];
+        
         $senha = $_POST['senha'];
 
         $sql = "SELECT * FROM usuario
@@ -16,7 +16,7 @@
 
         $stmt = $conn->prepare($sql);
 
-        $stmt->bindValue(':login',$login);
+        
         $stmt->bindValue(':senha',$senha);
 
         $stmt->execute();
@@ -74,7 +74,7 @@
         <label class="login-label">Senha</label>
         <input type="password" class="login-input" id="login-pass" placeholder="" value="">
         
-        <button class="login-btn" onclick="doLogin()">Entrar</button>
+       <a href="index.php" class="login-btn">Entrar</a>
         
         <a href="cadastro.php" style="color: #B8860B; text-decoration: none;">
             <strong>Criar conta</strong>
