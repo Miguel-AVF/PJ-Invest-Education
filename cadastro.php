@@ -12,18 +12,17 @@
         $data = $_POST['data'];
         $tel = $_POST['telefone'];
 
-        $sql = "INSERT INTO usuarios
+        $sql = "INSERT INTO usuario
         (nome_user, email_user, senha_user, data_nasc_user,  tel_user)
         VALUES
-        (:nome,:login,:senha,:data,:email,:tel)";
+        (:nome,:email,:senha,:data,:tel)";
 
         $stmt = $conn->prepare($sql);
 
         $stmt->bindValue(':nome',$nome);
-        $stmt->bindValue(':login',$login);
+        $stmt->bindValue(':email',$email);
         $stmt->bindValue(':senha',$senha);
         $stmt->bindValue(':data',$data);
-        $stmt->bindValue(':email',$email);
         $stmt->bindValue(':tel',$tel);
 
         if($stmt->execute()){
@@ -98,7 +97,7 @@
                 </div>
             </div>
 
-            <button type="submit" name="cadastrar" class="login-btn">
+            <button type="submit" name="cadastrar" href="index.php" class="login-btn">
                 Cadastrar
             </button>
 
