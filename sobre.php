@@ -15,12 +15,15 @@
     <h1 class="titulo">Quem Somos?</h1>
 
     <div class="sobre_conteudo">
-        <h2>Sobre Nós</h2>
-        <p>
-            Transformamos o aprendizado corporativo em uma jornada fluida e acessível. 
-            Nosso objetivo é conectar o potencial de talentos às demandas do mercado financeiro real, 
-            oferecendo um ambiente seguro que elimina os jargões tradicionais e capacita a população de maneira natural e eficiente.
-        </p>
+        <img src="image/moed-sobre.jpg" alt="Moedas de criptomoedas" class="sobre_imagem">
+        <div class="sobre_texto">
+            <h2>Sobre Nós</h2>
+            <p>
+                Transformamos o aprendizado corporativo em uma jornada fluida e acessível. 
+                Nosso objetivo é conectar o potencial de talentos às demandas do mercado financeiro real, 
+                oferecendo um ambiente seguro que elimina os jargões tradicionais e capacita a população de maneira natural e eficiente.
+            </p>
+        </div>
     </div>
 
     <div class="grid">
