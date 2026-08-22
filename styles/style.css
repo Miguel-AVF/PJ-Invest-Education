@@ -745,3 +745,11 @@ body {
         top: 5px;
     }
 }
+
+                                    /*footer.php - Centralização*/
+.footer {
+    background: #000;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: auto;
+}
