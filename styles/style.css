@@ -259,106 +259,137 @@ body {
     }
     .nav-menu a { margin-right: 0; }
     .apresentação h1 { font-size: 2rem; }
+    .sobre_conteudo {
+        flex-direction: column;
+    }
+    .sobre_imagem {
+        width: 100%;
+        max-width: 100%;
+    }
 }
                                             /*Sobre.php*/
+.sobre_duck {
+    padding-bottom: 60px;
+}
+
 .sobre_duck .titulo {
-    text-align: center;         
-    margin-top: 30px;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 40px 40px 35px;
+    font-size: 2.4rem;
+    font-weight: 700;
     color: #ffffff;
-    padding-left: 40px;      
 }
 
 /* 2. Container do Bloco "Sobre Nós" */
 .sobre_conteudo {
-    max-width: 800px;        
-    margin: 0 auto 60px 40px; 
-    padding: 0;              
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px 40px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
-/* Como não temos mais imagem, o texto ocupa o bloco todo normalmente */
+.sobre_imagem {
+    width: 45%;
+    max-width: 480px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
 .sobre_texto {
     width: 100%;
 }
 
 /* Título interno "Sobre nós." */
 .sobre_texto h2 {
-    font-size: 2.5rem;        
-    color: #ffffff;           
-    margin-bottom: 20px;      
+    font-size: 2rem;
+    color: #c5a880;
+    margin-bottom: 18px;
     font-weight: 600;
-    text-align: left;         /* Força o título para a esquerda */
+    text-align: left;
 }
 
 /* Estilo dos Parágrafos */
 .sobre_texto p {
     font-size: 1rem;
-    color: #ffffff;           
-    line-height: 1.6;         
-    margin-bottom: 20px;      
-    text-align: left;         /* Força o texto para a esquerda */
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    text-align: left;
 }
 
-/* Título de "Nossos Pilares" também alinhado à esquerda */
-.grid h2 {
-    text-align: left;         
-    color: #1e1e4f;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-/* Estilo de todos os Parágrafos */
-.sobre_texto p {
-    font-size: 1rem;
-    color: #444444;         
-    line-height: 1.6;        
-    margin-bottom: 20px;    
-}
-
-/* Título de "Nossos Pilares" centralizado para combinar */
+/* Bloco "Nossos Pilares" */
 .grid {
-    display: flex;
-    flex-direction: column;   
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 60px auto 0;
     padding: 0 40px;
-    gap: 30px;
 }
 
-/* Título de "Nossos Pilares" (Fica sozinho no topo) */
 .grid h2 {
     text-align: center;
     color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
-/* Criamos um comportamento onde os itens (h3 + p) que vêm DEPOIS do h2 fiquem lado a lado */
+/* Os itens (Missão, Visão, Valores) ficam lado a lado */
 .grid {
-    /* Força os blocos de Missão, Visão e Valores a virarem colunas horizontais */
     display: flex;
-    flex-flow: row wrap;       
-    justify-content: space-between; 
-    align-items: flex-start;   
-    gap: 40px;                
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-/* Cada coluna de texto individual (Missão, Visão, Valores) */
+.grid h2 {
+    flex-basis: 100%;
+}
+
+/* Cada card (Missão, Visão, Valores) */
 .pilar_item {
-    flex: 1;                  
-    min-width: 250px;          
-    background: transparent;
-    border: none;
-    padding: 0;
-    box-shadow: none;
+    position: relative;
+    flex: 1;
+    min-width: 260px;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 45px 28px 28px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    counter-increment: pilar;
+}
+
+/* Numeração em círculo dourado, no topo do card */
+.pilar_item::before {
+    content: counter(pilar);
+    position: absolute;
+    top: -22px;
+    left: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #c5a880;
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(197, 168, 128, 0.35);
+}
+
+.grid {
+    counter-reset: pilar;
 }
 
 /* Títulos das colunas (Missão, Visão, Valores) */
 .pilar_item h3 {
     color: #c5a880;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
     font-weight: 600;
 }
 
@@ -378,7 +409,7 @@ body {
     font-size: 0.95rem;
     color: #ffffff;
     line-height: 1.6;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .pilar_item ul li b {
