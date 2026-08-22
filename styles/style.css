@@ -570,3 +570,178 @@ body {
     width: 100%;
     margin-top: 10px;
 }
+
+                                            /*Informa.php - Introdução*/
+.informa_intro {
+    max-width: 760px;
+    margin: 70px auto 55px;
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+}
+
+.informa_intro h1 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.informa_intro h1::before {
+    content: 'GUIA DE INVESTIMENTOS';
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #c5a880;
+    margin-bottom: 14px;
+}
+
+.informa_intro p {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    color: #cfcfcf;
+}
+
+.informa_intro::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin: 35px auto 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, transparent, #c5a880, transparent);
+}
+
+@media (max-width: 768px) {
+    .informa_intro {
+        margin: 45px auto 35px;
+    }
+    .informa_intro h1 {
+        font-size: 2rem;
+    }
+}
+
+                                            /*Informa.php - Linha do tempo*/
+.linha_tempo {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.linha_tempo .tempo_item:first-child {
+    margin-top: 55px;
+}
+
+.tempo_item {
+    position: relative;
+    padding: 0 40px 55px 190px;
+}
+
+.tempo_item:last-child {
+    padding-bottom: 70px;
+}
+
+/* Linha vertical do tempo */
+.tempo_item::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    bottom: 0;
+    left: 165px;
+    width: 2px;
+    background-color: rgba(197, 168, 128, 0.35);
+}
+
+.tempo_item:last-child::before {
+    display: none;
+}
+
+/* Bolinha dourada sobre a linha */
+.tempo_item::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 159px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #c5a880;
+    box-shadow: 0 0 0 4px #000000;
+    z-index: 2;
+}
+
+/* Título (ex: CDB, Tesouro Direto...) faz o papel da "data" à esquerda */
+.tempo_titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+}
+
+.tempo_titulo h2 {
+    color: #c5a880;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Conteúdo à direita da linha */
+.tempo_conteudo h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.tempo_conteudo p {
+    color: #cfcfcf;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.tempo_conteudo ul {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.tempo_conteudo ul li {
+    position: relative;
+    color: #cfcfcf;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding-left: 16px;
+    margin-bottom: 6px;
+}
+
+.tempo_conteudo ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #c5a880;
+}
+
+.tempo_conteudo ul li strong {
+    color: #c5a880;
+}
+
+@media (max-width: 768px) {
+    .tempo_item {
+        padding: 0 20px 45px 34px;
+    }
+
+    .tempo_titulo {
+        position: static;
+        width: auto;
+        margin-bottom: 8px;
+    }
+
+    .tempo_item::before {
+        left: 6px;
+    }
+
+    .tempo_item::after {
+        left: 0px;
+        top: 5px;
+    }
+}
