@@ -51,7 +51,7 @@
                 <div class="func-inform">
                     <h3 class="h3">Informações</h3>
                     <p class="descrição">Tire duvidas com textos Simples</p>
-                    <a href="" class="botão">Veja Agora</a>
+                    <a href="informa.php" class="botão">Veja Agora</a>
                 </div>
             </div>
 
