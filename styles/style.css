@@ -570,3 +570,186 @@ body {
     width: 100%;
     margin-top: 10px;
 }
+
+                /*informa.php*/
+
+.apresentacao.informa_intro {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+/* Subtítulo / Categoria em Dourado Pequeno */
+
+/* Título Principal */
+.apresentacao.informa_intro h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', serif; /* Fonte com serifa elegante */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Descrição */
+.apresentacao.informa_intro p {
+    color: #a0a0a0;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.tempo_item {
+    display: flex;
+    position: relative;
+    padding-bottom: 50px; /* Espaçamento entre os itens */
+}
+
+/* Remove a linha vertical no último item */
+.tempo_item:last-child {
+    padding-bottom: 0;
+}
+
+/* Lado Esquerdo: Título Principal / "Ano" (ex: Tesouro Direto, CDB, LCI...) */
+.tempo_titulo {
+    width: 140px;
+    min-width: 140px;
+    text-align: right;
+    padding-right: 35px;
+}
+
+.tempo_titulo h2 {
+    color: #c89d51; /* Dourado */
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Lado Direito: Conteúdo Explicativo */
+.tempo_conteudo {
+    flex: 1;
+    padding-left: 35px;
+    position: relative;
+}
+
+/* ==========================================================================
+   ELEMENTOS DA LINHA VERTICAL E BOLA DOURADA
+   ========================================================================== */
+
+/* Linha Vertical Dourada/Acastanhada */
+.tempo_conteudo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: -50px;
+    width: 1px;
+    background-color: #574623; /* Linha sutil dourada/escura */
+}
+
+/* Oculta a linha vertical no último item */
+.tempo_item:last-child .tempo_conteudo::before {
+    display: block;
+    bottom: 0;
+}
+
+/* Marcador Circular (Bolinha Dourada) */
+.tempo_conteudo::after {
+    content: '';
+    position: absolute;
+    left: -6px; /* Centraliza sobre a linha de 1px */
+    top: 6px;
+    width: 13px;
+    height: 13px;
+    background-color: #c89d51; /* Cor preenchimento bolinha */
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #000000; /* Borda preta em volta da bolinha */
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO DO CONTEÚDO INTERNO
+   ========================================================================== */
+
+/* Título de Destaque Interno */
+.tempo_conteudo h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 15px 0 10px 0;
+}
+
+/* Parágrafos de Texto */
+.tempo_conteudo p {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* Listas (Li e Ul) */
+.tempo_conteudo ul {
+    list-style: none; /* Remove bolinhas padrões do HTML */
+    margin-bottom: 15px;
+}
+
+.tempo_conteudo ul li {
+    position: relative;
+    color: #b0b0b0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 6px;
+    padding-left: 18px;
+}
+
+/* Marcador personalizado das listas (traço ou ponto sutil) */
+.tempo_conteudo ul li::before {
+    content: '•';
+    color: #c89d51;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Destaque em Negrito dentro das listas */
+.tempo_conteudo strong {
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (Telas Menores / Celulares)
+   ========================================================================== */
+@media (max-width: 600px) {
+    .tempo_item {
+        flex-direction: column;
+    }
+
+    .tempo_titulo {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .tempo_conteudo {
+        padding-left: 25px;
+    }
+
+    .tempo_conteudo::before {
+        left: 0;
+    }
+
+    .tempo_conteudo::after {
+        left: -6px;
+        top: -28px; /* Ajusta bolinha para alinhar ao título no mobile */
+    }
+}
+
+
+
+
+                                    /*footer.php - Centralização*/
+.footer {
+    background: #000;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: auto;
+}
