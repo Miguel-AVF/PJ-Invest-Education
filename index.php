@@ -10,7 +10,6 @@
 
 ?>
 
-   
 
     <!-- BANNER PRINCIPAL (HERO) -->
     <section class="fundo">
