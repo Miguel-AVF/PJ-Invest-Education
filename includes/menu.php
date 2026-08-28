@@ -3,7 +3,7 @@
         <nav class="nav-menu">
             <a href="index.php">Inicio</a>
             <a href="informa.php">Informativo</a>
-            <a href="">Simulador</a>
+            <a href="simula.php">Simulador</a>
             <a href="sobre.php">Sobre Nós</a> 
             <a href="">Carteira</a>
         </nav>
