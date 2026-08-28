@@ -143,6 +143,7 @@ body {
 }
 
 .apresentação h1 {
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 15px;
@@ -169,6 +170,7 @@ body {
 }
 
 .sub_titulo h2 {
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 2.2rem;
     margin-bottom: 5px;
 }
@@ -273,6 +275,7 @@ body {
 }
 
 .sobre_duck .titulo {
+    font-family: Georgia, 'Times New Roman', serif;
     text-align: center;
     margin: 0;
     padding: 40px 40px 35px;
@@ -329,6 +332,7 @@ body {
 }
 
 .grid h2 {
+    font-family: Georgia, 'Times New Roman', serif;
     text-align: center;
     color: #ffffff;
     font-size: 1.9rem;
@@ -550,22 +554,67 @@ body {
     width: 100%;
 }
 
-/* Organiza as linhas do formulário em colunas flexíveis */
 .horizontal-form .form-row {
     display: flex;
-    gap: 16px; /* Espaço entre os campos na horizontal */
+    gap: 16px;
     width: 100%;
     margin-bottom: 12px;
 }
 
-/* Faz cada grupo de input ocupar o mesmo espaço disponível */
 .horizontal-form .form-group {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-/* Botão de cadastro ocupando toda a largura inferior */
+/* Controla a largura no topo para não ficar esticado */
+.title-group {
+    max-width: 140px; /* Define o tamanho compacto do seletor */
+}
+
+/* Container do toggle com borda dourada */
+.title-toggle {
+    display: flex;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #121212;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.title-toggle input[type="radio"] {
+    display: none;
+}
+
+/* Opção não selecionada (Texto Amarelo/Dourado) */
+.title-toggle label {
+    flex: 1;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #ffd700;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
+
+/* Opção Selecionada (Gradiente Dourado com texto escuro) */
+.title-toggle input[type="radio"]:checked + label {
+    background: linear-gradient(135deg, #ffd700, #c5a059);
+    color: #1a1a1a;
+    font-weight: bold;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover na opção inativa */
+.title-toggle label:hover:not(:checked) {
+    background-color: rgba(212, 175, 55, 0.15);
+}
+
 .horizontal-form .login-btn {
     width: 100%;
     margin-top: 10px;
@@ -743,9 +792,6 @@ body {
     }
 }
 
-
-
-
                                     /*footer.php - Centralização*/
 .footer {
     background: #000;
@@ -753,3 +799,5 @@ body {
     text-align: center;
     margin-top: auto;
 }
+
+                                    /*Simulador*/
