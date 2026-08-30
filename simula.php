@@ -39,47 +39,47 @@
         <label for="investment-option">Selecione o Ativo/Produto:</label>
         <select id="investment-option" name="investmentOption" required>
             <option value="" disabled selected>Escolha um Investimento...</option>
-            <option value="">Tesouro Selic</option>
-            <option value="">Tesouro IPCA</option>
-            <option value="">Tesouro IPCA com Juros Semestrais</option>
-            <option value="">Tesouro Prefixado</option>
-            <option value="">Tesouro Prefixado com Juros Semestrais</option>
+            <option value="tesouro-selic">Tesouro Selic</option>
+            <option value="tesouro-ipca">Tesouro IPCA</option>
+            <option value="tesouro-ipca-com-juros">Tesouro IPCA com Juros Semestrais</option>
+            <option value="tesouro-prefixado">Tesouro Prefixado</option>
+            <option value="tesouro-prefixado-com-juros">Tesouro Prefixado com Juros Semestrais</option>
 
-            <option value="">CDB 100% do CDI com liquidez diária</option>
-            <option value="">CDB 105% do CDI</option>
-            <option value="">CDB 110% do CDI</option>
-            <option value="">CDB prefixado</option>
-            <option value="">CDB IPCA + taxa fixa</option>
+            <option value="cdb-100%-do-cdi-com-liquidez-diaria">CDB 100% do CDI com liquidez diária</option>
+            <option value="cdb-105%-do-cdi">CDB 105% do CDI</option>
+            <option value="cdb-110%-do-cdi">CDB 110% do CDI</option>
+            <option value="cdb-prefixado">CDB prefixado</option>
+            <option value="cdb-ipca-+-taxa-fixa">CDB IPCA + taxa fixa</option>
 
-            <option value="">LCI 90% do CDI</option>
-            <option value="">LCI 95% do CDI</option>
-            <option value="">LCI 100% do CDI</option>
-            <option value="">LCI Prefixado</option>
-            <option value="">LCI IPCA + Taxa Fixa</option>
+            <option value="lci-90%-do-cdi">LCI 90% do CDI</option>
+            <option value="lci-95%-do-cdi">LCI 95% do CDI</option>
+            <option value="lci-100%-do-cdi">LCI 100% do CDI</option>
+            <option value="lci-prefixado">LCI Prefixado</option>
+            <option value="lci-ipca-+-taxa-fixa">LCI IPCA + Taxa Fixa</option>
 
-            <option value="">LCA 90% do CDI</option>
-            <option value="">LCA 95% do CDI</option>
-            <option value="">LCA 100% do CDI</option>
-            <option value="">LCA prefixado</option>
-            <option value="">LCA IPCA + taxa fixa</option>
+            <option value="lca-90%-do-cdi">LCA 90% do CDI</option>
+            <option value="lca-95%-do-cdi">LCA 95% do CDI</option>
+            <option value="lca-100%-do-cdi">LCA 100% do CDI</option>
+            <option value="lca-prefixado">LCA prefixado</option>
+            <option value="lca-ipca-+-taxa-fixa">LCA IPCA + taxa fixa</option>
 
-            <option value="">PETR4 - Petrobras</option>
-            <option value="">VALE3 - Vale</option>
-            <option value="">ITUB4 - Itaú Unibanco</option>
-            <option value="">PRIO3 - Prio</option>
-            <option value="">B3SA3 - B3</option>
+            <option value="petr4-petrobras">PETR4 - Petrobras</option>
+            <option value="vale3-vale">VALE3 - Vale</option>
+            <option value="itub4-itaú-unibanco">ITUB4 - Itaú Unibanco</option>
+            <option value="prio3-prio">PRIO3 - Prio</option>
+            <option value="b3sa3-b3">B3SA3 - B3</option>
 
-            <option value="">CPLG11 - Capitania Logística</option>
-            <option value="">BTLG11 - BTG Pactual Logística</option>
-            <option value="">TRXF11 - TRX Real Estate</option>
-            <option value="">XPML11 - XP Malls</option>
-            <option value="">HGLG11 - Patria Logistica</option>
+            <option value="cplg11-capinania-logística">CPLG11 - Capitania Logística</option>
+            <option value="btlg11-btg-pactual-logística">BTLG11 - BTG Pactual Logística</option>
+            <option value="trxf11-trx-estate">TRXF11 - TRX Real Estate</option>
+            <option value="xpml11-xp-malls">XPML11 - XP Malls</option>
+            <option value="hglg11-patria-logística">HGLG11 - Patria Logistica</option>
 
-            <option value="">BTC - Bitcoin</option>
-            <option value="">ETH - Ethereum</option>
-            <option value="">USDT - Tether</option>
-            <option value="">BNB - BNB</option>
-            <option value="">SOL - Solana</option>
+            <option value="btc-bitcoin">BTC - Bitcoin</option>
+            <option value="eth-ethereum">ETH - Ethereum</option>
+            <option value="usdt-ther">USDT - Tether</option>
+            <option value="bnb-binance-coin-/-build-and-build">BNB - (Binance Coin/Build and Build)</option>
+            <option value="sol-solana">SOL - Solana</option>
         </select>
     </div>
 
