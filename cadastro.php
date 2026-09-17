@@ -1,34 +1,40 @@
 <?php
 
+    session_start();
     require_once 'config/database.php';
 
     $msg = '';
 
     if(isset($_POST['cadastrar'])){
-
+        $tratamento = $_POST['tratamento'];
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];
         $data = $_POST['data'];
         $tel = $_POST['telefone'];
 
-        $sql = "INSERT INTO usuario
-        (nome_user, email_user, senha_user, data_nasc_user,  tel_user)
-        VALUES
-        (:nome,:email,:senha,:data,:tel)";
+        try {
+            $sql = "INSERT INTO usuario (tratamento, nome_user, email_user, senha_user, data_nasc_user, tel_user) 
+                    VALUES (:tratamento, :nome, :email, :senha, :data, :tel)";
 
-        $stmt = $conn->prepare($sql);
+            $stmt = $conn->prepare($sql);
 
-        $stmt->bindValue(':nome',$nome);
-        $stmt->bindValue(':email',$email);
-        $stmt->bindValue(':senha',$senha);
-        $stmt->bindValue(':data',$data);
-        $stmt->bindValue(':tel',$tel);
+            $stmt->bindValue(':tratamento', $tratamento);
+            $stmt->bindValue(':nome', $nome);
+            $stmt->bindValue(':email', $email);
+            $stmt->bindValue(':senha', $senha);
+            $stmt->bindValue(':data', $data);
+            $stmt->bindValue(':tel', $tel);
 
-        if($stmt->execute()){
-            $msg = "Cadastro realizado com sucesso!";
+            if($stmt->execute()){
+                // Salva na sessão e redireciona para a index com o alert
+                $_SESSION['mensagem_welcome'] = "Bem-vindo(a), $tratamento $nome!";
+                header("Location: index.php");
+                exit();
+            }
+        } catch (PDOException $e) {
+            $msg = "Erro ao cadastrar: " . $e->getMessage();
         }
-
     }
 
 ?>
@@ -66,10 +72,10 @@
     <div class="form-row title-row">
         <div class="form-group title-group">
             <div class="title-toggle">
-                <input type="radio" id="sr" name="tratamento" value="Sr" checked>
+                <input type="radio" id="sr" name="tratamento" value="Sr." checked>
                 <label for="sr">Sr.</label>
 
-                <input type="radio" id="sra" name="tratamento" value="Sra">
+                <input type="radio" id="sra" name="tratamento" value="Sra.">
                 <label for="sra">Sra.</label>
             </div>
         </div>
