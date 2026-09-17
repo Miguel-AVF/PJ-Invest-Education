@@ -11,6 +11,20 @@
 ?>
 
 
+<?php
+
+    session_start();
+    
+    if (isset($_SESSION['mensagem_welcome'])) {
+        $msg_welcome = $_SESSION['mensagem_welcome'];
+        echo "<script>alert('$msg_welcome');</script>";
+        
+        // Limpa a sessão para o alerta sumir ao atualizar a página (F5)
+        unset($_SESSION['mensagem_welcome']);
+    }
+
+?>
+
     <!-- BANNER PRINCIPAL (HERO) -->
     <section class="fundo">
         <div class="apresentação">
