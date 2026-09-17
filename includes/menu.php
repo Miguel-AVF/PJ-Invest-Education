@@ -15,6 +15,10 @@
             </form>
         </div>
 
+        <nav class="nav-menu">
+            <a href="logoult.php">Sair</a>
+        </nav>
+
         <div class="user-profile">
             <a href="cadastro.php"><img src="image/pfp.avif" alt="Foto de Perfil" ></a>
         </div>
