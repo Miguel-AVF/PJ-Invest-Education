@@ -2,7 +2,7 @@ create database Dusk;
 use Dusk;
 
 create table usuario(
-	id_user int(100) primary  key,
+	id_user int(100) primary key auto_increment,
     tratamento VARCHAR(10) NOT NULL DEFAULT 'Sr',
 	nome_user varchar(40),
     email_user varchar(100),
