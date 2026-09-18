@@ -143,6 +143,7 @@ body {
 }
 
 .apresentação h1 {
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 15px;
@@ -169,6 +170,7 @@ body {
 }
 
 .sub_titulo h2 {
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 2.2rem;
     margin-bottom: 5px;
 }
@@ -273,6 +275,7 @@ body {
 }
 
 .sobre_duck .titulo {
+    font-family: Georgia, 'Times New Roman', serif;
     text-align: center;
     margin: 0;
     padding: 40px 40px 35px;
@@ -329,6 +332,7 @@ body {
 }
 
 .grid h2 {
+    font-family: Georgia, 'Times New Roman', serif;
     text-align: center;
     color: #ffffff;
     font-size: 1.9rem;
@@ -354,7 +358,7 @@ body {
     position: relative;
     flex: 1;
     min-width: 260px;
-    background-color: #1a1a1a;
+    background-color: #080808;
     border: 1px solid #333333;
     border-radius: 10px;
     padding: 45px 28px 28px;
@@ -550,201 +554,244 @@ body {
     width: 100%;
 }
 
-/* Organiza as linhas do formulário em colunas flexíveis */
 .horizontal-form .form-row {
     display: flex;
-    gap: 16px; /* Espaço entre os campos na horizontal */
+    gap: 16px;
     width: 100%;
     margin-bottom: 12px;
 }
 
-/* Faz cada grupo de input ocupar o mesmo espaço disponível */
 .horizontal-form .form-group {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-/* Botão de cadastro ocupando toda a largura inferior */
+/* Controla a largura no topo para não ficar esticado */
+.title-group {
+    max-width: 140px; /* Define o tamanho compacto do seletor */
+}
+
+/* Container do toggle com borda dourada */
+.title-toggle {
+    display: flex;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #121212;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.title-toggle input[type="radio"] {
+    display: none;
+}
+
+/* Opção não selecionada (Texto Amarelo/Dourado) */
+.title-toggle label {
+    flex: 1;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #ffd700;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
+
+/* Opção Selecionada (Gradiente Dourado com texto escuro) */
+.title-toggle input[type="radio"]:checked + label {
+    background: linear-gradient(135deg, #ffd700, #c5a059);
+    color: #1a1a1a;
+    font-weight: bold;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover na opção inativa */
+.title-toggle label:hover:not(:checked) {
+    background-color: rgba(212, 175, 55, 0.15);
+}
+
 .horizontal-form .login-btn {
     width: 100%;
     margin-top: 10px;
 }
 
-                                            /*Informa.php - Introdução*/
-.informa_intro {
-    max-width: 760px;
-    margin: 70px auto 55px;
-    padding: 0 20px;
+                /*informa.php*/
+
+.apresentacao.informa_intro {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
     text-align: center;
-    position: relative;
 }
 
-.informa_intro h1 {
-    text-align: center;
-    font-size: 2.6rem;
+/* Subtítulo / Categoria em Dourado Pequeno */
+
+/* Título Principal */
+.apresentacao.informa_intro h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', serif; /* Fonte com serifa elegante */
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.informa_intro h1::before {
-    content: 'GUIA DE INVESTIMENTOS';
-    display: block;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #c5a880;
-    margin-bottom: 14px;
-}
-
-.informa_intro p {
-    text-align: center;
-    max-width: 640px;
-    margin: 0 auto;
-    color: #cfcfcf;
-}
-
-.informa_intro::after {
-    content: '';
-    display: block;
-    width: 70px;
-    height: 3px;
-    margin: 35px auto 0;
-    border-radius: 3px;
-    background: linear-gradient(90deg, transparent, #c5a880, transparent);
-}
-
-@media (max-width: 768px) {
-    .informa_intro {
-        margin: 45px auto 35px;
-    }
-    .informa_intro h1 {
-        font-size: 2rem;
-    }
-}
-
-                                            /*Informa.php - Linha do tempo*/
-.linha_tempo {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.linha_tempo .tempo_item:first-child {
-    margin-top: 55px;
+/* Descrição */
+.apresentacao.informa_intro p {
+    color: #a0a0a0;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .tempo_item {
+    display: flex;
     position: relative;
-    padding: 0 40px 55px 190px;
+    padding-bottom: 50px; /* Espaçamento entre os itens */
 }
 
+/* Remove a linha vertical no último item */
 .tempo_item:last-child {
-    padding-bottom: 70px;
+    padding-bottom: 0;
 }
 
-/* Linha vertical do tempo */
-.tempo_item::before {
-    content: '';
-    position: absolute;
-    top: 6px;
-    bottom: 0;
-    left: 165px;
-    width: 2px;
-    background-color: rgba(197, 168, 128, 0.35);
-}
-
-.tempo_item:last-child::before {
-    display: none;
-}
-
-/* Bolinha dourada sobre a linha */
-.tempo_item::after {
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 159px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: #c5a880;
-    box-shadow: 0 0 0 4px #000000;
-    z-index: 2;
-}
-
-/* Título (ex: CDB, Tesouro Direto...) faz o papel da "data" à esquerda */
+/* Lado Esquerdo: Título Principal / "Ano" (ex: Tesouro Direto, CDB, LCI...) */
 .tempo_titulo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
+    width: 140px;
+    min-width: 140px;
+    text-align: right;
+    padding-right: 35px;
 }
 
 .tempo_titulo h2 {
-    color: #c5a880;
-    font-size: 1.35rem;
+    color: #c89d51; /* Dourado */
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
-/* Conteúdo à direita da linha */
+/* Lado Direito: Conteúdo Explicativo */
+.tempo_conteudo {
+    flex: 1;
+    padding-left: 35px;
+    position: relative;
+}
+
+/* ==========================================================================
+   ELEMENTOS DA LINHA VERTICAL E BOLA DOURADA
+   ========================================================================== */
+
+/* Linha Vertical Dourada/Acastanhada */
+.tempo_conteudo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: -50px;
+    width: 1px;
+    background-color: #574623; /* Linha sutil dourada/escura */
+}
+
+/* Oculta a linha vertical no último item */
+.tempo_item:last-child .tempo_conteudo::before {
+    display: block;
+    bottom: 0;
+}
+
+/* Marcador Circular (Bolinha Dourada) */
+.tempo_conteudo::after {
+    content: '';
+    position: absolute;
+    left: -6px; /* Centraliza sobre a linha de 1px */
+    top: 6px;
+    width: 13px;
+    height: 13px;
+    background-color: #c89d51; /* Cor preenchimento bolinha */
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #000000; /* Borda preta em volta da bolinha */
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO DO CONTEÚDO INTERNO
+   ========================================================================== */
+
+/* Título de Destaque Interno */
 .tempo_conteudo h3 {
     color: #ffffff;
     font-size: 1.1rem;
     font-weight: 700;
-    margin-top: 22px;
-    margin-bottom: 10px;
+    margin: 15px 0 10px 0;
 }
 
+/* Parágrafos de Texto */
 .tempo_conteudo p {
-    color: #cfcfcf;
+    color: #b0b0b0;
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 12px;
 }
 
+/* Listas (Li e Ul) */
 .tempo_conteudo ul {
-    list-style: none;
-    margin-bottom: 12px;
+    list-style: none; /* Remove bolinhas padrões do HTML */
+    margin-bottom: 15px;
 }
 
 .tempo_conteudo ul li {
     position: relative;
-    color: #cfcfcf;
-    font-size: 0.95rem;
+    color: #b0b0b0;
+    font-size: 0.92rem;
     line-height: 1.6;
-    padding-left: 16px;
     margin-bottom: 6px;
+    padding-left: 18px;
 }
 
+/* Marcador personalizado das listas (traço ou ponto sutil) */
 .tempo_conteudo ul li::before {
     content: '•';
+    color: #c89d51;
     position: absolute;
     left: 0;
-    color: #c5a880;
+    font-weight: bold;
 }
 
-.tempo_conteudo ul li strong {
-    color: #c5a880;
+/* Destaque em Negrito dentro das listas */
+.tempo_conteudo strong {
+    color: #ffffff;
 }
 
-@media (max-width: 768px) {
+/* ==========================================================================
+   RESPONSIVIDADE (Telas Menores / Celulares)
+   ========================================================================== */
+@media (max-width: 600px) {
     .tempo_item {
-        padding: 0 20px 45px 34px;
+        flex-direction: column;
     }
 
     .tempo_titulo {
-        position: static;
-        width: auto;
-        margin-bottom: 8px;
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 25px;
+        margin-bottom: 10px;
     }
 
-    .tempo_item::before {
-        left: 6px;
+    .tempo_conteudo {
+        padding-left: 25px;
     }
 
-    .tempo_item::after {
-        left: 0px;
-        top: 5px;
+    .tempo_conteudo::before {
+        left: 0;
+    }
+
+    .tempo_conteudo::after {
+        left: -6px;
+        top: -28px; /* Ajusta bolinha para alinhar ao título no mobile */
     }
 }
+
 
                                     /*footer.php - Centralização*/
 .footer {
@@ -752,4 +799,260 @@ body {
     padding: 25px 0;
     text-align: center;
     margin-top: auto;
+}
+
+                                    /*Simulador*/
+.simulator-form {
+    max-width: 720px;
+    margin: 55px auto 40px;
+    padding: 32px;
+    background-color: #111111;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+}
+
+.simulator-form h2 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.simulator-form hr {
+    border: none;
+    border-top: 1px solid #262626;
+    margin: 22px 0;
+}
+
+.simulator-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.simulator-form .form-group label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin-bottom: 8px;
+}
+
+.simulator-form input,
+.simulator-form select {
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 10px;
+    border: 1.5px solid #333333;
+    background: #0d0d0d;
+    color: #e5e5e5;
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color .2s;
+    box-sizing: border-box;
+}
+
+.simulator-form input::placeholder {
+    color: #666666;
+}
+
+.simulator-form input:focus,
+.simulator-form select:focus {
+    border-color: #c5a880;
+}
+
+.simulator-form small {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+.simulator-form .time-inputs {
+    display: flex;
+    gap: 12px;
+}
+
+.simulator-form .time-inputs input {
+    flex: 2;
+}
+
+.simulator-form .time-inputs select {
+    flex: 1;
+}
+
+.btn-simulate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px 16px;
+    background-color: #c5a880;
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    font-family: inherit;
+    font-size: 0.98rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.btn-simulate:hover {
+    background-color: #d8bd98;
+}
+
+/* Resultados da simulação */
+.resultado_simulador {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 40px;
+}
+
+.resultado_stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #111111;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+}
+
+.stat_icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 4px;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    color: #c5a880;
+}
+
+.stat_icone svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Cor de destaque diferente para cada ícone, igual à referência */
+.stat_card:nth-child(1) .stat_icone {
+    color: #ec4899;
+    background-color: rgba(236, 72, 153, 0.12);
+    border-color: rgba(236, 72, 153, 0.3);
+}
+
+.stat_card:nth-child(2) .stat_icone {
+    color: #2dd4bf;
+    background-color: rgba(45, 212, 191, 0.12);
+    border-color: rgba(45, 212, 191, 0.3);
+}
+
+.stat_card:nth-child(3) .stat_icone {
+    color: #c5a880;
+    background-color: rgba(197, 168, 128, 0.12);
+    border-color: rgba(197, 168, 128, 0.3);
+}
+
+.stat_card:nth-child(4) .stat_icone {
+    color: #f87171;
+    background-color: rgba(248, 113, 113, 0.12);
+    border-color: rgba(248, 113, 113, 0.3);
+}
+
+.stat_rotulo {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+}
+
+.stat_valor {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #c5a880;
+}
+
+.resultado_bloco {
+    padding: 26px 30px;
+    background-color: #111111;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.resultado_bloco.escondido {
+    display: none;
+}
+
+.resultado_bloco h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.bloco_titulo_texto {
+    padding: 4px 12px;
+    border: 1.5px solid #c5a880;
+    border-radius: 6px;
+}
+
+.bloco_icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    color: #c5a880;
+}
+
+.bloco_icone svg {
+    width: 15px;
+    height: 15px;
+}
+
+.bloco_placeholder {
+    padding: 30px;
+    text-align: center;
+    color: #777777;
+    font-size: 0.9rem;
+    background-color: #0d0d0d;
+    border: 1px dashed #333333;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .simulator-form {
+        padding: 24px 20px;
+        margin: 35px auto 30px;
+    }
+    .simulator-form .time-inputs {
+        flex-direction: column;
+    }
+    .resultado_simulador {
+        padding: 0 20px;
+    }
+    .resultado_stats {
+        grid-template-columns: 1fr;
+    }
 }
