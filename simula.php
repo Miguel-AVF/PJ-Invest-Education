@@ -121,34 +121,83 @@
 </form>
 
 
-<div>
-    <!-- Lucro Mensal -->
+<div class="resultado_simulador">
+
+    <div class="resultado_stats">
+        <div class="stat_card">
+            <span class="stat_icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </span>
+            <span class="stat_rotulo">Lucro Mensal</span>
+            <span class="stat_valor" id="lucro-mensal">—</span>
+        </div>
+
+        <div class="stat_card">
+            <span class="stat_icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            </span>
+            <span class="stat_rotulo">Lucro Anual</span>
+            <span class="stat_valor" id="lucro-anual">—</span>
+        </div>
+
+        <div class="stat_card">
+            <span class="stat_icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            </span>
+            <span class="stat_rotulo">Imposto</span>
+            <span class="stat_valor" id="imposto">—</span>
+        </div>
+
+        <div class="stat_card">
+            <span class="stat_icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </span>
+            <span class="stat_rotulo">Lucro Desejado</span>
+            <span class="stat_valor" id="lucro-desejado">—</span>
+        </div>
+    </div>
+
+    <div class="resultado_bloco escondido" id="grafico">
+        <h3>
+            <span class="bloco_icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </span>
+            <span class="bloco_titulo_texto">Gráfico</span>
+        </h3>
+        <div class="bloco_placeholder">O gráfico da simulação aparecerá aqui.</div>
+    </div>
+
+    <div class="resultado_bloco escondido" id="comparacao">
+        <h3>
+            <span class="bloco_icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </span>
+            Comparação com outros do mesmo tipo
+        </h3>
+        <div class="bloco_placeholder">A comparação com ativos semelhantes aparecerá aqui.</div>
+    </div>
+
+    <div class="resultado_bloco escondido" id="info-especificas">
+        <h3>
+            <span class="bloco_icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+            </span>
+            Informações Específicas
+        </h3>
+        <div class="bloco_placeholder">Detalhes do ativo selecionado aparecerão aqui.</div>
+    </div>
+
 </div>
 
-<div>
-    <!-- Lucro Anual -->
-</div>
+<script>
+    document.getElementById('investment-simulator-form').addEventListener('submit', function (evento) {
+        evento.preventDefault();
 
-<div>
-    <!-- Imposto -->
-</div>
-
-<div>
-    <!-- Lucro Desejado -->
-</div>
-
-<div>
-    <!-- Grafico -->
-</div>
-
-<div>
-    <!-- Comparação com outros do mesmo tipo -->
-</div>
-
-<div>
-    <!-- Informações Especificas -->
-</div>
-
+        document.querySelectorAll('.resultado_bloco').forEach(function (bloco) {
+            bloco.classList.remove('escondido');
+        });
+    });
+</script>
 
 <?php
 
