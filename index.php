@@ -77,7 +77,7 @@
                 <div class="func-inform">
                     <h3 class="h3">Simulações</h3>
                     <p class="descrição">Aprenda na Pratica</p>
-                    <a href="" class="botão" > Veja Agora </a>
+                    <a href="simula.php" class="botão" > Veja Agora </a>
                 </div>
             </div>
         </div>
