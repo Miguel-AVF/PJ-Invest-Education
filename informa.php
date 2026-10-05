@@ -39,6 +39,8 @@
 
             <div class="tempo_titulo">
                 <h2>Tesouro Direto</h2>
+                <span class="taxa_live" id="taxa-selic">Selic: carregando…</span>
+                <span class="taxa_live" id="taxa-ipca">IPCA 12m: carregando…</span>
             </div>
 
             <div class="tempo_conteudo">
@@ -79,6 +81,7 @@
 
             <div class="tempo_titulo">
                 <h2>CDB</h2>
+                <span class="taxa_live" id="taxa-cdi-cdb">CDI: carregando…</span>
             </div>
 
             <div class="tempo_conteudo">
@@ -118,6 +121,7 @@
 
             <div class="tempo_titulo">
                 <h2>LCI</h2>
+                <span class="taxa_live" id="taxa-cdi-lci">CDI: carregando…</span>
             </div>
 
             <div class="tempo_conteudo">
@@ -166,6 +170,7 @@
 
             <div class="tempo_titulo">
                 <h2>LCA</h2>
+                <span class="taxa_live" id="taxa-cdi-lca">CDI: carregando…</span>
             </div>
 
             <div class="tempo_conteudo">
@@ -225,12 +230,12 @@
                 </div>
 
                 <div>
-                    <ul>
-                        <li><strong>PETR4</strong> - Petrobras;</li>
-                        <li><strong>VALE3</strong> - Vale;</li>
-                        <li><strong>ITUB4</strong> - Itaú Unibanco;</li>
-                        <li><strong>PRIO3</strong> - Prio;</li>
-                        <li><strong>B3SA3</strong> - B3.</li>
+                    <ul class="lista_cotacoes">
+                        <li id="cotacao-PETR4"><strong>PETR4</strong> - Petrobras;</li>
+                        <li id="cotacao-VALE3"><strong>VALE3</strong> - Vale;</li>
+                        <li id="cotacao-ITUB4"><strong>ITUB4</strong> - Itaú Unibanco;</li>
+                        <li id="cotacao-PRIO3"><strong>PRIO3</strong> - Prio;</li>
+                        <li id="cotacao-B3SA3"><strong>B3SA3</strong> - B3.</li>
                     </ul>
                 </div>
 
@@ -265,12 +270,12 @@
                 </div>
 
                 <div>
-                    <ul>
-                        <li><strong>CPLG11 </strong> - Capitania Logística;</li>
-                        <li><strong>BTLG11 </strong> - BTG Pactual Logística;</li>
-                        <li><strong>TRXF11 </strong> - TRX Real Estate;</li>
-                        <li><strong>XPML11 </strong> - XP Malls;</li>
-                        <li><strong>HGLG11 </strong> - Patria Logistica.</li>
+                    <ul class="lista_cotacoes">
+                        <li id="cotacao-CPLG11"><strong>CPLG11 </strong> - Capitania Logística;</li>
+                        <li id="cotacao-BTLG11"><strong>BTLG11 </strong> - BTG Pactual Logística;</li>
+                        <li id="cotacao-TRXF11"><strong>TRXF11 </strong> - TRX Real Estate;</li>
+                        <li id="cotacao-XPML11"><strong>XPML11 </strong> - XP Malls;</li>
+                        <li id="cotacao-HGLG11"><strong>HGLG11 </strong> - Patria Logistica.</li>
                     </ul>
                 </div>
 
@@ -313,12 +318,12 @@
                 </div>
 
                 <div>
-                    <ul>
-                        <li><strong>BTC</strong> - Bitcoin;</li>
-                        <li><strong>ETH</strong> - Ethereum;</li>
-                        <li><strong>USDT</strong> - Tether;</li>
-                        <li><strong>BNB</strong> - (Build and Build/Binance Coin);</li>
-                        <li><strong>SOL</strong> - Solana.</li>
+                    <ul class="lista_cotacoes">
+                        <li id="cotacao-BTC"><strong>BTC</strong> - Bitcoin;</li>
+                        <li id="cotacao-ETH"><strong>ETH</strong> - Ethereum;</li>
+                        <li id="cotacao-USDT"><strong>USDT</strong> - Tether;</li>
+                        <li id="cotacao-BNB"><strong>BNB</strong> - (Build and Build/Binance Coin);</li>
+                        <li id="cotacao-SOL"><strong>SOL</strong> - Solana.</li>
                     </ul>
                 </div>
 
@@ -340,7 +345,9 @@
         </div>
 
     </div>
-    
+
+    <script src="scripts/informa-live.js"></script>
+
 <?php
 
     include __DIR__. '/includes/footer.php';

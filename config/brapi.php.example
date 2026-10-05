@@ -1,0 +1,4 @@
+<?php
+// Copie este arquivo para config/brapi.local.php e coloque seu token.
+// Nunca publique o arquivo brapi.local.php em um repositório.
+define('BRAPI_LOCAL_TOKEN', 'COLE_SEU_TOKEN_DA_BRAPI_AQUI');

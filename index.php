@@ -10,7 +10,20 @@
 
 ?>
 
-   
+
+<?php
+
+    session_start();
+    
+    if (isset($_SESSION['mensagem_welcome'])) {
+        $msg_welcome = $_SESSION['mensagem_welcome'];
+        echo "<script>alert('$msg_welcome');</script>";
+        
+        // Limpa a sessão para o alerta sumir ao atualizar a página (F5)
+        unset($_SESSION['mensagem_welcome']);
+    }
+
+?>
 
     <!-- BANNER PRINCIPAL (HERO) -->
     <section class="fundo">
@@ -51,7 +64,7 @@
                 <div class="func-inform">
                     <h3 class="h3">Informações</h3>
                     <p class="descrição">Tire duvidas com textos Simples</p>
-                    <a href="" class="botão">Veja Agora</a>
+                    <a href="informa.php" class="botão">Veja Agora</a>
                 </div>
             </div>
 
