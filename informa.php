@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    <div class="apresentacao informa_intro">
+    <div class="informa_intro">
         <div>
             <h1>Nossos conteudos</h1>
         </div>
@@ -35,7 +35,7 @@
     
     <div class="linha_tempo">
 
-        <div class="tempo_item">
+        <div class="tempo_item" id="tesouro-direto">
 
             <div class="tempo_titulo">
                 <h2>Tesouro Direto</h2>
@@ -45,7 +45,7 @@
                 <div>
 
                     <p>
-                        O Tesouro Direto é uma plataforma do governo federal brasileiro que consiste em voce emprestar dinheiro para o governo, e o governo devolve esse dinheiro com juros. 
+                        O Tesouro Direto é uma plataforma do governo federal brasileiro que consiste em voce emprestar dinheiro para o governo, e o governo devolve esse dinheiro com   juros. 
                     </p>
 
                 </div>
@@ -75,7 +75,7 @@
 
         </div>
         
-        <div class="tempo_item">
+        <div class="tempo_item" id="cdb">
 
             <div class="tempo_titulo">
                 <h2>CDB</h2>
@@ -114,7 +114,7 @@
 
         </div>
 
-        <div class="tempo_item">
+        <div class="tempo_item" id="lci">
 
             <div class="tempo_titulo">
                 <h2>LCI</h2>
@@ -144,16 +144,10 @@
                 </div>
 
                 <div>
-                    <p>
-                        Uma característica muito importante para pessoas físicas no brasil é que a LCI é isenta do imposto de renda sobre os rendimentos.
-                    </p>
-                </div>
-
-                <div>
                     <ul>
                         <li><strong>Risco:</strong> Depende do banco.</li>
                         <li><strong>Garantia:</strong> Possui cobertura do FGC, dentro dos limites.</li>
-                        <li><strong>IR:</strong> Isenção para pessoas físicas, conforme as regras atuais.</li>
+                        <li><strong>Imposto de Renda - IR:</strong> Isenção para pessoas físicas, conforme as regras atuais.</li>
                         <li><strong>Liquidez:</strong> Geralmente menor que a CDBs.</li>
                     </ul>
                 </div>
@@ -162,7 +156,7 @@
 
         </div>
 
-        <div class="tempo_item">
+        <div class="tempo_item" id="lca">
 
             <div class="tempo_titulo">
                 <h2>LCA</h2>
@@ -190,16 +184,10 @@
                 </div>
 
                 <div>
-                    <p>
-                        Assim como o LCI, para pessoa física é isento de imposto de renda sobre os rendimentos, conforme as regras vigentes
-                    </p>
-                </div>
-
-                <div>
                     <ul>
                         <li><strong>Risco:</strong> Depende do banco.</li>
                         <li><strong>Garantia:</strong> FGC, dentro dos limites.</li>
-                        <li><strong>IR:</strong> Isento para pessoa física, conforme as regras atuais.</li>
+                        <li><strong>Imposto de Renda - IR:</strong> Isento para pessoa física, conforme as regras atuais.</li>
                         <li><strong>Liquidez:</strong> normalmente exige que você mantenha o dinheiro até determinada data.</li>
                     </ul>
                 </div>
@@ -208,7 +196,7 @@
 
         </div>
 
-        <div class="tempo_item">
+        <div class="tempo_item" id="mercado-de-acoes">
 
             <div class="tempo_titulo">
                 <h2>Mercado de ações</h2>
@@ -225,12 +213,12 @@
                 </div>
 
                 <div>
-                    <ul>
-                        <li><strong>PETR4</strong> - Petrobras;</li>
-                        <li><strong>VALE3</strong> - Vale;</li>
-                        <li><strong>ITUB4</strong> - Itaú Unibanco;</li>
-                        <li><strong>PRIO3</strong> - Prio;</li>
-                        <li><strong>B3SA3</strong> - B3.</li>
+                    <ul class="lista_cotacoes">
+                        <li id="cotacao-PETR4"><strong>PETR4</strong> - Petrobras;</li>
+                        <li id="cotacao-VALE3"><strong>VALE3</strong> - Vale;</li>
+                        <li id="cotacao-ITUB4"><strong>ITUB4</strong> - Itaú Unibanco;</li>
+                        <li id="cotacao-PRIO3"><strong>PRIO3</strong> - Prio;</li>
+                        <li id="cotacao-B3SA3"><strong>B3SA3</strong> - B3.</li>
                     </ul>
                 </div>
 
@@ -238,7 +226,7 @@
                     <ul>
                         <li><strong>Risco:</strong> Alto risco pois o preço pode sofrer grandes oscilações e você pode perder parte significativa do dinheiro investido.</li>
                         <li><strong>Garantia:</strong> Não possui FGC, uma ação que representa participação na empresa e está sujeita aos riscos dela e do mercado.</li>
-                        <li><strong>IR:</strong> Existe tributação sobre determinados ganhos de capital e operações realizadas na bolsa. Dividendos possuem regras tributárias próprias.</li>
+                        <li><strong>Imposto de Renda - IR:</strong> Existe tributação sobre determinados ganhos de capital e operações realizadas na bolsa. Dividendos possuem regras tributárias próprias.</li>
                         <li><strong>Liquidez:</strong> Alta nas ações mais negociadas, mas varia conforme a ação. Ações podem ser negociadas durante o pregão da B3.</li>
                     </ul>
                 </div>
@@ -247,7 +235,7 @@
 
         </div>
 
-        <div class="tempo_item">
+        <div class="tempo_item" id="fundos-imobiliarios">
 
             <div class="tempo_titulo">
                 <h2>Fundos Imobiliários</h2>
@@ -265,12 +253,12 @@
                 </div>
 
                 <div>
-                    <ul>
-                        <li><strong>CPLG11 </strong> - Capitania Logística;</li>
-                        <li><strong>BTLG11 </strong> - BTG Pactual Logística;</li>
-                        <li><strong>TRXF11 </strong> - TRX Real Estate;</li>
-                        <li><strong>XPML11 </strong> - XP Malls;</li>
-                        <li><strong>HGLG11 </strong> - Patria Logistica.</li>
+                    <ul class="lista_cotacoes">
+                        <li id="cotacao-CPLG11"><strong>CPLG11 </strong> - Capitania Logística;</li>
+                        <li id="cotacao-BTLG11"><strong>BTLG11 </strong> - BTG Pactual Logística;</li>
+                        <li id="cotacao-TRXF11"><strong>TRXF11 </strong> - TRX Real Estate;</li>
+                        <li id="cotacao-XPML11"><strong>XPML11 </strong> - XP Malls;</li>
+                        <li id="cotacao-HGLG11"><strong>HGLG11 </strong> - Patria Logistica.</li>
                     </ul>
                 </div>
 
@@ -278,7 +266,7 @@
                     <ul>
                         <li><strong>Risco:</strong> Médio e alto, pois o preço das cotas pode cair e os rendimentos não são garantidos. Há riscos relacionados aos imóveis, inquilinos, vacância, juros e mercado.</li>
                         <li><strong>Garantia:</strong> Não possui FGC e o patrimônio do FII está sujeito aos riscos dos ativos que compõem o fundo.</li>
-                        <li><strong>IR:</strong> Os rendimentos distribuídos a pessoas físicas podem ser isentos de IR quando cumpridos os requisitos legais. Já o lucro na venda de cotas possui tributação própria.</li>
+                        <li><strong>Imposto de Renda - IR:</strong> Os rendimentos distribuídos a pessoas físicas podem ser isentos de IR quando cumpridos os requisitos legais. Já o lucro na venda de cotas possui tributação própria.</li>
                         <li><strong>Liquidez:</strong> Geralmente alta nos FII mais negociados, pois suas cotas são negociadas na B3. Porém, a liquidez varia bastante entre os fundos.</li>
                     </ul>
                 </div>
@@ -287,7 +275,7 @@
 
         </div>
 
-        <div class="tempo_item">
+        <div class="tempo_item" id="criptomoedas">
 
             <div class="tempo_titulo">
                 <h2>Criptomoedas</h2>
@@ -307,30 +295,20 @@
                 </div>
 
                 <div>
-                    <p>
-                        Considerando as principais criptomoedas conhecidas e negociadas no mercado:
-                    </p>
-                </div>
-
-                <div>
-                    <ul>
-                        <li><strong>BTC</strong> - Bitcoin;</li>
-                        <li><strong>ETH</strong> - Ethereum;</li>
-                        <li><strong>USDT</strong> - Tether;</li>
-                        <li><strong>BNB</strong> - (Build and Build/Binance Coin);</li>
-                        <li><strong>SOL</strong> - Solana.</li>
+                    <ul class="lista_cotacoes">
+                        <li id="cotacao-BTC"><strong>BTC</strong> - Bitcoin;</li>
+                        <li id="cotacao-ETH"><strong>ETH</strong> - Ethereum;</li>
+                        <li id="cotacao-USDT"><strong>USDT</strong> - Tether;</li>
+                        <li id="cotacao-BNB"><strong>BNB</strong> - (Build and Build/Binance Coin);</li>
+                        <li id="cotacao-SOL"><strong>SOL</strong> - Solana.</li>
                     </ul>
-                </div>
-
-                <div>
-                    <p>A Receita Federal também reconhece categorias como Bitcoin, altcoins e stablecoins.</p>
                 </div>
 
                  <div>
                     <ul>
                         <li><strong>Risco:</strong> Muito alto, pois criptomoedas podem sofrer grandes oscilações de preço e perdas significativas.</li>
                         <li><strong>Garantia:</strong> Não possuem FGC e o valor é garantido pelo governo brasileiro ou pelo FGC.</li>
-                        <li><strong>IR:</strong> Pode haver imposto sobre ganhos, dependendo da operação e das regras tributárias aplicáveis. a receita federal possui regras específicas para cripto ativos e obrigações de declaração. A Receita Federal informa que, a partir de julho de 2026, as operações com cripto ativos passaram a ser informadas através da DeCripto, novo sistema alinhado ao padrão internacional da OCDE.</li>
+                        <li><strong>Imposto de Renda - IR:</strong> Pode haver imposto sobre ganhos, dependendo da operação e das regras tributárias aplicáveis. a receita federal possui regras específicas para cripto ativos e obrigações de declaração. A Receita Federal informa que, a partir de julho de 2026, as operações com cripto ativos passaram a ser informadas através da DeCripto, novo sistema alinhado ao padrão internacional da OCDE.</li>
                         <li><strong>Liquidez:</strong> Alta nas principais criptomoedas, como bitcoin e ethereum, pois são negociadas continuamente em exchanges. a liquidez pode ser muito menor em criptomoedas pequenas.</li>
                     </ul>
                 </div>
@@ -340,7 +318,7 @@
         </div>
 
     </div>
-    
+
 <?php
 
     include __DIR__. '/includes/footer.php';
