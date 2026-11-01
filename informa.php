@@ -71,6 +71,14 @@
                     </ul>
                 </div>
 
+                <br>
+
+                <div>
+                    <nav class="nav-menu">
+                        <a href="informs/tesouro.php">Saiba mais sobre o Tesouro Direto</a>
+                    </nav>
+                </div>
+                
             </div>
 
         </div>
@@ -109,6 +117,15 @@
                         <li><strong>Liquidez</strong> Alguns permitem retirar o dinheiro a qualquer momento; outros só no vencimento.</li>
                     </ul>
                 </div>        
+
+                <br>
+
+                <div>
+                    <nav class="nav-menu">
+                        <a href="informs/cdb.php">Saiba mais sobre o CDB</a>
+                    </nav>
+                </div>
+                
 
             </div>
 
@@ -152,6 +169,15 @@
                     </ul>
                 </div>
 
+                <br>
+
+                <div>
+                    <nav class="nav-menu">
+                        <a href="informs/lci.php">Saiba mais sobre o LCI</a>
+                    </nav>
+                </div>
+                <
+
             </div>
 
         </div>
@@ -192,6 +218,15 @@
                     </ul>
                 </div>
 
+                <br>
+
+                <div>
+                    <nav class="nav-menu">
+                       <a href="informs/lca.php">Saiba mais sobre o LCA</a>
+                    </nav>
+                </div>
+                
+
             </div>
 
         </div>
@@ -230,6 +265,15 @@
                         <li><strong>Liquidez:</strong> Alta nas ações mais negociadas, mas varia conforme a ação. Ações podem ser negociadas durante o pregão da B3.</li>
                     </ul>
                 </div>
+
+                <br>
+
+                <div>
+                    <nav class="nav-menu">
+                        <a href="informs/mercacoes.php">Saiba mais sobre o Mercado de Ações</a>
+                    </nav>
+                </div>
+                
 
             </div>
 
@@ -270,6 +314,15 @@
                         <li><strong>Liquidez:</strong> Geralmente alta nos FII mais negociados, pois suas cotas são negociadas na B3. Porém, a liquidez varia bastante entre os fundos.</li>
                     </ul>
                 </div>
+
+                <br>
+
+                <div>
+                    <nav class="nav-menu">
+                        <a href="informs/imobiliarios.php">Saiba mais sobre os Fundos Imobiliários</a>
+                    </nav>
+                </div>
+                
 
             </div>
 
@@ -313,6 +366,11 @@
                     </ul>
                 </div>
                 
+                <br>
+                
+                <nav class="nav-menu">
+                    <a href="informs/criptomoedas.php">Saiba mais sobre as Criptomoedas</a>
+                </nav>
             </div>
 
         </div>
