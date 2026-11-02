@@ -80,8 +80,16 @@
 
 </div>
 
-<div class="vid">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/z3fTzc0q10M?si=Z0YpZna-SZRSG6np&amp;start=213" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="adicional">
+
+    <div class="vid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/z3fTzc0q10M?si=Z0YpZna-SZRSG6np&amp;start=213" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="sobre-vid">
+        <p><b>Assista ao vídeo <br> para melhor entendimento</b></p>
+    </div>
+
 </div>
 
 <?php

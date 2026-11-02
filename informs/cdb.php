@@ -74,7 +74,6 @@
 
     </div>
 
-
     <div class="explica">
 
         <h2>CDB IPCA + taxa fixa</h2>
@@ -87,32 +86,46 @@
 
     </div>
 
-    <h3>Risco, liquidez e rentabilidade </h3>
+    <div class="explica">
+        <h3>Risco, liquidez e rentabilidade </h3>
 
-    <p>
-        Três palavras aparecem o tempo todo em educação financeira: risco, liquidez e rentabilidade. Risco 
-        está relacionado à possibilidade de resultados diferentes do esperado ou de perdas; liquidez indica 
-        a facilidade e as condições para transformar o investimento em dinheiro disponível; rentabilidade 
-        mostra quanto o investimento pode render.<br> 
-        Um produto com maior rentabilidade potencial não é automaticamente adequado para todos os 
-        objetivos. O prazo e a necessidade de acesso ao dinheiro mudam a análise.
-    </p>
+        <p>
+            Três palavras aparecem o tempo todo em educação financeira: risco, liquidez e rentabilidade. Risco 
+            está relacionado à possibilidade de resultados diferentes do esperado ou de perdas; liquidez indica 
+            a facilidade e as condições para transformar o investimento em dinheiro disponível; rentabilidade 
+            mostra quanto o investimento pode render.<br> 
+            Um produto com maior rentabilidade potencial não é automaticamente adequado para todos os 
+            objetivos. O prazo e a necessidade de acesso ao dinheiro mudam a análise.
+        </p>
+    </div>
 
-    <h3>CDB — Tributação e exemplos </h3>
+    <div class="explica">
 
-    <p>
-        Em muitos CDBs para pessoa física, a tributação de renda segue a tabela regressiva do Imposto 
-        de Renda para renda fixa, de acordo com o prazo. Também é necessário considerar o IOF em 
-        situações de resgate muito curto, conforme as regras vigentes.<br> 
-        Exemplo didático: suponha dois CDBs com a mesma quantia inicial. Um oferece liquidez diária e 
-        outro paga uma taxa maior, mas exige permanência até uma data específica. O segundo não deve 
-        ser comparado apenas pela taxa: se o dinheiro puder ser necessário antes, a liquidez passa a ser 
-        parte importante da decisão.
-    </p>
+        <h3>CDB — Tributação e exemplos </h3>
+
+        <p>
+            Em muitos CDBs para pessoa física, a tributação de renda segue a tabela regressiva do Imposto 
+            de Renda para renda fixa, de acordo com o prazo. Também é necessário considerar o IOF em 
+            situações de resgate muito curto, conforme as regras vigentes.<br> 
+            Exemplo didático: suponha dois CDBs com a mesma quantia inicial. Um oferece liquidez diária e 
+            outro paga uma taxa maior, mas exige permanência até uma data específica. O segundo não deve 
+            ser comparado apenas pela taxa: se o dinheiro puder ser necessário antes, a liquidez passa a ser 
+            parte importante da decisão.
+        </p>
+
+    </div>
+   
+<div class="adicional">
 
     <div class="vid">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Ofd6goeBFho?si=G749ZH5ThrCibSC7&amp;start=62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+
+    <div class="sobre-vid">
+        <p><b>Assista ao vídeo <br> para melhor entendimento</b></p>
+    </div>
+
+</div>
 
 <?php
 

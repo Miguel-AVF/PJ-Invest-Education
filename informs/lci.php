@@ -80,13 +80,25 @@
 
 <br><br>
 
-<div class="vid">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/D7bBsf5tUXI?si=pJkQ_5JZoSUFtyep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="adicional">
+
+    <div class="vid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D7bBsf5tUXI?si=pJkQ_5JZoSUFtyep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="sobre-vid">
+        <p><b>Assista ao vídeo <br> para melhor entendimento</b></p>
+    </div>
+
 </div>
 
-<p>
-   OBS: As LCIs são elegíveis à garantia ordinária do FGC, observados os limites e as regras aplicáveis. A referência geral é de até R$ 250 mil por CPF ou CNPJ por instituição ou conglomerado financeiro, respeitadas as demais condições do fundo.
-</p>
+<div class="explica">
+
+    <p>
+        <b>OBS:</b> As LCI's são elegíveis à garantia ordinária do FGC, observados os limites e as regras aplicáveis. A referência geral é de até R$ 250 mil por CPF ou CNPJ por instituição ou conglomerado financeiro, respeitadas as demais condições do fundo.
+    </p>
+
+</div>
 
 <?php
 

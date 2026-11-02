@@ -49,7 +49,6 @@
 
 </div>
 
-
 <div class="explica">
 
     <h2>ITUB4 — Itaú </h2>
@@ -87,7 +86,7 @@
 
 </div>
 
-<div>
+<div class="explica">
 
     <h3>Como estudar uma ação</h3>
 
@@ -99,7 +98,7 @@
 
 </div>
 
-<div>
+<div class="explica">
 
     <h3>Ações — riscos e diversificação</h3>
 
@@ -113,7 +112,7 @@
 
 </div>
 
-<div>
+<div class="explica">
 
     <h3>Dividendos </h3>
 
@@ -125,8 +124,16 @@
 
 </div>
 
-<div class="vid">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/khToouRsNts?si=t20WuvEXtVRsnzbu&amp;start=258" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="adicional">
+
+    <div class="vid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/khToouRsNts?si=t20WuvEXtVRsnzbu&amp;start=258" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="sobre-vid">
+        <p><b>Assista ao vídeo <br> para melhor entendimento</b></p>
+    </div>
+
 </div>
 
 <?php

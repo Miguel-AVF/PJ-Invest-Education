@@ -85,7 +85,7 @@
 
 </div>
 
-<div>
+<div class="explica">
 
     <h3>Cuidados ao investir em criptomoedas</h3>
 
@@ -95,11 +95,15 @@
 
 </div>
 
-<p>
-    Antes de investir, é importante observar: <br><br>
-</p>
+<div class="texto">
 
-<div>
+    <p>
+        <b>Antes de investir, é importante observar: </b><br><br>
+    </p>
+
+</div>
+
+<div class="cripto">
     <ul>
         <li><strong>Volatilidade:</strong> os preços podem subir ou cair significativamente em pouco tempo.</li>
         <li><strong>Segurança:</strong> é necessário proteger as carteiras digitais, senhas e chaves privadas.</li>
@@ -109,9 +113,16 @@
     </ul>
 </div>
 
+<div class="adicional">
 
-<div class="vid">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AQqVSa9Yyp4?si=hsBr13TGsMNiRcZ6&amp;start=651" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="vid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AQqVSa9Yyp4?si=hsBr13TGsMNiRcZ6&amp;start=651" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="sobre-vid">
+        <p><b>Assista ao vídeo <br> para melhor entendimento</b></p>
+    </div>
+
 </div>
 
 <?php

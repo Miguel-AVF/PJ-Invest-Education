@@ -72,7 +72,7 @@
     
 </div>
     
-<div>
+<div class="explica">
     <h1>Tesouro Direto — marcação a mercado</h1>
 
     <p>
@@ -81,8 +81,8 @@
     </p>
 </div>
 
-<div>
-    <h1>Custos </h1>
+<div class="explica">
+    <h2>Custos </h2>
 
     <p>
         O Tesouro Direto informa a existência de taxa de custódia da B3 e de eventual taxa cobrada pela instituição financeira. A taxa de custódia da B3 é informada pelo próprio Tesouro Direto como 0,20% ao ano, com regras específicas, incluindo isenção para Tesouro Selic até R$ 10 mil por CPF e cobrança sobre o excedente, conforme a regulamentação vigente. <br>
@@ -90,8 +90,8 @@
     </p>
 </div>
 
-<div>
-    <h1>Objetivos </h1>
+<div class="explica">
+    <h2>Objetivos </h2>
 
     <p>
         O material-base apresenta a ideia de relacionar o título ao objetivo: Selic para objetivos que
@@ -103,8 +103,21 @@
 
 <br><br>
 
-<div class="vid">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/iQFmtW3zlmQ?si=6wiPjUzYSga5FYyw&amp;start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="adicional">
+
+    <div class="vid">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/iQFmtW3zlmQ?si=6wiPjUzYSga5FYyw&amp;start=36"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="sobre-vid">
+        <p><b>Assista ao vídeo <br> para melhor entendimento</b></p>
+    </div>
+
 </div>
 
 <?php
