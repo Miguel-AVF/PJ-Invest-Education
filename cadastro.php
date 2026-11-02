@@ -9,7 +9,7 @@
         $tratamento = $_POST['tratamento'];
         $nome = $_POST['nome'];
         $email = $_POST['email'];
-        $senha = $_POST['senha'];
+        $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
         $data = $_POST['data'];
         $tel = $_POST['telefone'];
 
@@ -27,9 +27,12 @@
             $stmt->bindValue(':tel', $tel);
 
             if($stmt->execute()){
-                // Salva na sessão e redireciona para a index com o alert
+                session_regenerate_id(true);
+                $_SESSION['id_user'] = (int)$conn->lastInsertId();
+                $_SESSION['nome_user'] = $nome;
+                // Inicia questionário após cadastro
                 $_SESSION['mensagem_welcome'] = "Bem-vindo(a), $tratamento $nome!";
-                header("Location: index.php");
+                header("Location: quiz.php");
                 exit();
             }
         } catch (PDOException $e) {
@@ -62,7 +65,7 @@
         <?php if(!empty($msg)): ?>
 
         <div class="login-error" style="display: block;">
-            <?= $msg ?>
+            <?= htmlspecialchars($msg, ENT_QUOTES, "UTF-8") ?>
         </div>
 
         <?php endif; ?>

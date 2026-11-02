@@ -4,8 +4,9 @@
     // Mesmas APIs usadas no simulador (scripts/simulador.js):
     // - Banco Central (SGS): Selic, CDI e IPCA 12m - sem token
     // - AwesomeAPI: cotação de criptomoedas - sem token
-    // - brapi.dev: cotação de ações e FIIs via brapi-proxy.php.
-    //   O token fica protegido no servidor.
+    // - brapi.dev: cotação de ações e FIIs - sem token só libera
+    //   PETR4, VALE3, ITUB4 e MGLU3 (token opcional em api-config.js
+    //   libera os demais)
     // ---------------------------------------------------------------
     var BCB_SGS_BASE = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.';
     var BCB_SERIES = { selic: 432, cdi: 4389, ipca: 13522 };
@@ -116,9 +117,13 @@
         });
         if (!algumElemento) return;
 
-        var url = 'brapi-proxy.php?tickers=' + encodeURIComponent(TICKERS_ACOES.join(','));
+        var url = 'api/brapi.php?symbols=' + TICKERS_ACOES.join(',');
+        var headers = {};
+        if (typeof BRAPI_TOKEN !== 'undefined' && BRAPI_TOKEN) {
+            headers['Authorization'] = 'Bearer ' + BRAPI_TOKEN;
+        }
 
-        fetch(url).then(function (resposta) {
+        fetch(url, { headers: headers }).then(function (resposta) {
             if (!resposta.ok) throw new Error('Falha ao consultar a API de ações (status ' + resposta.status + ').');
             return resposta.json();
         }).then(function (dados) {

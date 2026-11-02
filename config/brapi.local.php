@@ -1,4 +1,4 @@
 <?php
-// Cole aqui o token obtido no dashboard da brapi.dev.
-// Este arquivo está no .gitignore.
-define('BRAPI_LOCAL_TOKEN', '3jtNRhBFcNe8eAvZWFGYrB');
+// Use a variável de ambiente BRAPI_TOKEN ou informe aqui no servidor.
+// Nunca publique este arquivo com uma chave real.
+define('BRAPI_LOCAL_TOKEN', '');

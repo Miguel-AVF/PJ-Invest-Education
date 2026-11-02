@@ -13,19 +13,17 @@
 
 <?php
 
-    session_start();
+    if (session_status() !== PHP_SESSION_ACTIVE) session_start();
     
     if (isset($_SESSION['mensagem_welcome'])) {
         $msg_welcome = $_SESSION['mensagem_welcome'];
-        echo "<script>alert('$msg_welcome');</script>";
+        echo "<script>alert(" . json_encode($msg_welcome, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) . ");</script>";
         
-        // Limpa a sessão para o alerta sumir ao atualizar a página (F5)
         unset($_SESSION['mensagem_welcome']);
     }
 
 ?>
 
-    <!-- BANNER PRINCIPAL (HERO) -->
     <section class="fundo">
         <div class="apresentação">
             <h1>Dusk Invest Education</h1>
@@ -35,27 +33,25 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DE ESTOQUE DESTAQUE -->
     <section class="funções">
         <div class="sub_titulo">
             <h2>Funções</h2>
         </div>
 
         <div class="func-grid">
-            <!-- Card de Carro 1 -->
+
             <div class="func-card">
                 <div class="func-imagem">
-                    <img src="image/grafico.avif" alt="Grafico">
+                    <img src="image/carteira.png" alt="Carteira">
                     
                 </div>
                 <div class="func-inform">
-                    <h3 class="h3">Graficos</h3>
+                    <h3 class="h3">Carteira</h3>
                     <p class="descrição">Acompanhe seu Crescimento</p>
-                    <a href="" class="botão"> Veja Agora </a>
+                    <a href="carteira.php" class="botão"> Veja Agora </a>
                 </div>
             </div>
 
-            <!-- Card de Carro 2 -->
             <div class="func-card">
                 <div class="func-imagem">
                     <img src="image/inform.jpeg" alt="Informação">
@@ -68,7 +64,6 @@
                 </div>
             </div>
 
-            <!-- Card de Carro 3 -->
             <div class="func-card">
                 <div class="func-imagem">
                     <img src="image/simula.png" alt="Simulação">
@@ -77,7 +72,7 @@
                 <div class="func-inform">
                     <h3 class="h3">Simulações</h3>
                     <p class="descrição">Aprenda na Pratica</p>
-                    <a href="" class="botão" > Veja Agora </a>
+                    <a href="simula.php" class="botão" > Veja Agora </a>
                 </div>
             </div>
         </div>

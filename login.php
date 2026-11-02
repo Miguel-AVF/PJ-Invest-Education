@@ -10,20 +10,19 @@
         
         $senha = $_POST['senha'];
 
-        $sql = "SELECT * FROM usuario
-                WHERE nome_user = :login
-                AND senha_user = :senha";
+        $sql = "SELECT * FROM usuario WHERE (email_user = :login OR nome_user = :login)";
 
         $stmt = $conn->prepare($sql);
 
         
-        $stmt->bindValue(':senha',$senha);
+        $stmt->bindValue(':login', trim($_POST['login'] ?? ''));
 
         $stmt->execute();
 
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if($user){
+        if($user && (password_verify($senha, $user['senha_user']) || hash_equals((string)$user['senha_user'], (string)$senha))){
+            session_regenerate_id(true);
 
             $_SESSION['id_user'] = $user['id_user'];
             $_SESSION['nome_user'] = $user['nome_user'];
@@ -54,7 +53,7 @@
 
     <?php if(!empty($msg)): ?>
         <div class="mensagem">
-            <?= $msg ?>
+            <?= htmlspecialchars($msg, ENT_QUOTES, "UTF-8") ?>
         </div>
         <?php endif; ?>
 
@@ -68,13 +67,15 @@
         
         <div class="login-error" id="login-error"></div>
         
+        <form method="post" action="login.php">
         <label class="login-label">E-mail</label>
-        <input type="email" class="login-input" id="login-email" placeholder="" value="">
+        <input type="email" class="login-input" id="login-email" name="login" required placeholder="" value="">
         
         <label class="login-label">Senha</label>
-        <input type="password" class="login-input" id="login-pass" placeholder="" value="">
+        <input type="password" class="login-input" id="login-pass" name="senha" required placeholder="" value="">
         
-       <a href="index.php" class="login-btn">Entrar</a>
+       <button type="submit" name="entrar" class="login-btn">Entrar</button>
+        </form>
         
         <a href="cadastro.php" style="color: #B8860B; text-decoration: none;">
             <strong>Criar conta</strong>
