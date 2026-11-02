@@ -1612,3 +1612,40 @@ input, select, textarea { max-width: 100%; }
         width: 100%;
     }
 }
+                    /* informs */
+
+.explica h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.explica p {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    margin-bottom: 30px;
+    text-align: left;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vid {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.vid iframe {
+    width: 85%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
