@@ -10,7 +10,7 @@
 
 ?>
 
-<div>
+<div class="informa_intro">
 
     <h1>Tesouro Direto</h1>
 
@@ -21,7 +21,7 @@
 
 </div>
 
-<div>
+<div class="explica">
 
     <H2>Tesouro Selic</H2>
 
@@ -32,7 +32,7 @@
 
 </div>
 
-<div>
+<div class="explica">
 
     <H2>Tesouro IPCA</H2>
 
@@ -43,7 +43,7 @@
 
 </div>
 
-<div>
+<div class="explica">
 
     <H2>Tesouro IPCA com juros semestrais</H2>
 
@@ -54,7 +54,7 @@
 
 </div>
 
-<div>
+<div class="explica">
     <H2>Tesouro Prefixado</H2>
 
     <P>
@@ -62,7 +62,7 @@
     </P>
 </div>
 
-<div>
+<div class="explica">
 
     <H2>Tesouro Prefixado com juros semestrais</H2>
 
@@ -71,75 +71,26 @@
     </P>
     
 </div>
-
-
-<style>
-        table, th, td {
-            border: 1px solid white;
-            border-collapse: collapse;
-            padding: 8px;
-        }
-    </style>
-</head>
-<body>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Título</th>
-                <th>Logica Principal</th>
-                <th>Fluxo</th>
-            </tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td>Selic</td>
-                <td>Acompanha a Selic </td>
-                <td>No vencimento/resgate </td>
-            </tr>
-
-            <tr>
-                <td>IPCA</td>
-                <td>IPCA + taxa</td>
-                <td>No vencimento</td>
-            </tr>
-
-            <tr>
-                <td>IPCA com juros semestrais</td>
-                <td>IPCA + taxa</td>
-                <td>Juros periódicos + principal </td>
-            </tr>
-
-            <tr>
-                <td>Prefixado</td>
-                <td>Taxa definida</td>
-                <td>No vencimento</td>
-            </tr>
-
-            <tr>
-                <td>Prefixado com juros semestrais</td>
-                <td>Taxa definida</td>
-                <td>Juros periódicos + principal</td>
-            </tr>
-
-        </tbody>
-    </table>
-
+    
+<div>
     <h1>Tesouro Direto — marcação a mercado</h1>
 
     <p>
         Um ponto importante é que o preço de um título pode variar antes do vencimento. Isso significa que vender antecipadamente pode gerar um resultado diferente daquele imaginado ao simplesmente olhar a taxa contratada.<br> 
         Para quem mantém o título até o vencimento, a análise segue as condições de remuneração previstas. Para quem vende antes, o preço de mercado naquele momento influencia o resultado. 
     </p>
+</div>
 
+<div>
     <h1>Custos </h1>
 
     <p>
         O Tesouro Direto informa a existência de taxa de custódia da B3 e de eventual taxa cobrada pela instituição financeira. A taxa de custódia da B3 é informada pelo próprio Tesouro Direto como 0,20% ao ano, com regras específicas, incluindo isenção para Tesouro Selic até R$ 10 mil por CPF e cobrança sobre o excedente, conforme a regulamentação vigente. <br>
         As condições de tarifas podem mudar, então é importante conferir a página oficial do Tesouro Direto antes de uma aplicação.
     </p>
+</div>
 
+<div>
     <h1>Objetivos </h1>
 
     <p>
@@ -148,6 +99,13 @@
         à inflação; Prefixado para quem deseja uma taxa conhecida na contratação; e títulos com juros
         semestrais para quem precisa estudar um fluxo periódico de pagamentos.
     </p>
+</div>
+
+<br><br>
+
+<div class="vid">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iQFmtW3zlmQ?si=6wiPjUzYSga5FYyw&amp;start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 <?php
 
