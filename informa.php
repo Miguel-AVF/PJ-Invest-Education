@@ -375,6 +375,56 @@
 
         </div>
 
+        <div class="tempo_item">
+
+            <div class="tempo_titulo">
+                <h2>Indicação A.A e A.M</h2>
+            </div>
+
+            <div class="tempo_conteudo">
+
+                <p>
+                    <strong>a.a. (ao ano):</strong> taxa de juros ou rentabilidade expressa para um período de um ano. Pode 
+                    indicar uma taxa contratada na renda fixa ou um resultado observado na renda variável; não 
+                    significa garantia de rendimento futuro. <br>
+                    pode aparecer em diferentes categorias de investimento, mas seu 
+                    significado depende da forma de remuneração. Em títulos de renda fixa, como CDBs, LCIs, 
+                    LCAs e títulos do Tesouro Direto, uma taxa anual pode ser contratada previamente ou 
+                    apresentada como referência de remuneração. Em produtos ligados ao CDI ou ao IPCA, é 
+                    necessário observar o indicador e as condições específicas do título.
+                </p>
+
+                <p>
+                    <strong>a.m. (ao mês):</strong> taxa de juros ou rentabilidade expressa para um período de um mês. Uma 
+                    taxa mensal não deve ser comparada diretamente com uma taxa anual sem considerar o 
+                    período e a forma de cálculo. <br>
+                    Taxas mensais e anuais representam períodos diferentes; por 
+                    isso, devem ser comparadas considerando o prazo, a capitalização e as condições de cálculo. 
+                    Não se deve simplesmente multiplicar uma taxa mensal por 12 sem verificar se o cálculo é 
+                    adequado.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="tempo_item">
+
+            <div class="tempo_titulo">
+                <h2>Prazo em dias uteis</h2>
+            </div>
+
+            <div class="tempo_conteudo">
+
+            <p>
+                <strong>(D+0, D+1, D+2 ou superiores):</strong> prazo necessário para que uma transação financeira seja concluída e o dinheiro efetivamente mude de mãos. A letra "D" indica o dia do evento (como uma compra, venda ou pedido de resgate), e o número representa a quantidade de dias úteis para a compensação.
+                Os prazos variam conforme o produto: D+0 ocorre no mesmo dia (comum em Tesouro Direto e CDBs de liquidez diária), enquanto D+1, D+2 ou superiores são padrão em ações, criptomoedas e fundos de investimento. É essencial verificar esse prazo antes de investir, pois o dinheiro não fica disponível de forma imediata.
+            </p>
+
+            </div>
+
+        </div>
+
     </div>
 
 <?php
