@@ -58,7 +58,7 @@
             Baixe a planilha abaixo ⬇
         </p>
 
-        <a href="downloads/Planilha de Organização Financeira do Primo Pobre - Versão 2026.xlsx"
+        <a href="downloads/Planilha de Organização Financeira.xlsx"
            class="botao-download"
            download>
             <img src="image/download-icon.svg" alt="Ícone download">
