@@ -310,8 +310,7 @@
             '<div class="info_linha"><span>Variação (24h)</span><span class="' + (variacao >= 0 ? 'positiva' : 'negativa') + '">' + formatarPercentual(variacao) + '</span></div>' +
             '<div class="info_linha"><span>Máxima (24h)</span><span>' + formatarMoeda(maxima) + '</span></div>' +
             '<div class="info_linha"><span>Mínima (24h)</span><span>' + formatarMoeda(minima) + '</span></div>' +
-            '<div class="info_linha"><span>Atualizado em</span><span>' + moeda.create_date + '</span></div>' +
-            '<p class="info_fonte">Fonte: AwesomeAPI (economia.awesomeapi.com.br)</p>';
+            '<div class="info_linha"><span>Atualizado em</span><span>' + moeda.create_date + '</span></div>';
     }
 
     
@@ -332,8 +331,7 @@
                 '</div>';
         }).join('');
 
-        comparacaoEl.innerHTML = '<div class="comparacao_lista">' + linhas + '</div>' +
-            '<p class="info_fonte">Fonte: AwesomeAPI (economia.awesomeapi.com.br)</p>';
+        comparacaoEl.innerHTML = '<div class="comparacao_lista">' + linhas + '</div>';
     }
 
     function montarGraficoCripto(dados) {
@@ -387,8 +385,7 @@
             '<div class="info_linha"><span>Variação (dia)</span><span class="' + (variacao >= 0 ? 'positiva' : 'negativa') + '">' + formatarPercentual(variacao) + '</span></div>' +
             '<div class="info_linha"><span>Máxima (dia)</span><span>' + formatarMoeda(maxima) + '</span></div>' +
             '<div class="info_linha"><span>Mínima (dia)</span><span>' + formatarMoeda(minima) + '</span></div>' +
-            '<div class="info_linha"><span>Volume</span><span>' + (acao.regularMarketVolume ? acao.regularMarketVolume.toLocaleString('pt-BR') : '—') + '</span></div>' +
-            '<p class="info_fonte">Fonte: brapi.dev</p>';
+            '<div class="info_linha"><span>Volume</span><span>' + (acao.regularMarketVolume ? acao.regularMarketVolume.toLocaleString('pt-BR') : '—') + '</span></div>';
     }
 
     function montarComparacaoAcao(lista, tickerSelecionado) {
@@ -401,8 +398,7 @@
                 '</div>';
         }).join('');
 
-        comparacaoEl.innerHTML = '<div class="comparacao_lista">' + linhas + '</div>' +
-            '<p class="info_fonte">Fonte: brapi.dev</p>';
+        comparacaoEl.innerHTML = '<div class="comparacao_lista">' + linhas + '</div>';
     }
 
     function montarGraficoAcao(lista) {
@@ -494,8 +490,7 @@
             '<div class="info_linha"><span>Total Investido</span><span>' + formatarMoeda(simulacao.totalInvestido) + '</span></div>' +
             '<div class="info_linha"><span>Saldo Final Projetado</span><span>' + formatarMoeda(simulacao.saldoFinal) + '</span></div>' +
             '<div class="info_linha"><span>Lucro Total (bruto)</span><span class="positiva">' + formatarMoeda(simulacao.lucroTotal) + '</span></div>' +
-            '<div class="info_linha"><span>Imposto de Renda</span><span>' + (config.isento ? 'Isento' : (aliquota * 100).toLocaleString('pt-BR') + '%') + '</span></div>' +
-            '<p class="info_fonte">Fonte dos indexadores: Banco Central do Brasil (SGS). Taxa do produto estimada com base no percentual/spread médio de mercado - não é a taxa exata do seu banco ou do Tesouro Direto.</p>';
+            '<div class="info_linha"><span>Imposto de Renda</span><span>' + (config.isento ? 'Isento' : (aliquota * 100).toLocaleString('pt-BR') + '%') + '</span></div>';
     }
 
     function montarComparacaoRendaFixa(config, indicadores) {
@@ -513,8 +508,7 @@
                 '</div>';
         }).join('');
 
-        comparacaoEl.innerHTML = '<div class="comparacao_lista">' + linhas + '</div>' +
-            '<p class="info_fonte">Fonte: Banco Central do Brasil (SGS) - comparação entre os produtos de ' + config.grupo + ' cadastrados.</p>';
+        comparacaoEl.innerHTML = '<div class="comparacao_lista">' + linhas + '</div>';
     }
 
     function montarGraficoRendaFixa(simulacao) {
